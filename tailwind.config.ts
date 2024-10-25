@@ -11,6 +11,17 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        bg: "#121314",
+        semiBg: "#1A1B1E",
+        cardBg: "#232529",
+        stroke: "#2F3037",
+        strokeHover: "#474853",
+        titleText: "#F9F9F9",
+        bodyText: "#A7AAB4",
+      },
+      fontFamily: {
+        neuePower: [`var(--font-neue-power)`],
+        poppins: [`var(--font-poppins)`],
       },
     },
   },

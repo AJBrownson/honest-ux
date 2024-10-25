@@ -3,16 +3,25 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
+const neuePower = localFont({
+  src: "./fonts/NeuePower-Ultra.woff",
+  variable: "--font-neue-power",
+})
+
+const poppins = localFont({
+  src: [
+    {
+      path: "./fonts/Poppins-Medium.ttf",
+      weight: "500",
+    },
+    {
+      path: "./fonts/Poppins-Semibold.ttf",
+      weight: "600",
+    },
+  ],
+  variable: "--font-poppins",
+})
 
 export const metadata: Metadata = {
   title: "Honest UX | Portfolio Site",
@@ -27,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${neuePower.variable} ${poppins.variable} antialiased`}
       >
         {children}
         {/* <Footer /> */}
