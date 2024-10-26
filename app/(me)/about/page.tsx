@@ -7,7 +7,7 @@ import Accordion from "@/app/components/Accordion";
 
 export default function About() {
   return (
-    <main className="lg:px-10">
+    <main className="lg:px-10 pt-24 pb-[156px] lg:pb-32 bg-[#1A1B1E]">
       <section>
         <p className="text-[#A7AAB4] text-[10px] md:text-xs font-poppins font-medium">
           Dieter Rams

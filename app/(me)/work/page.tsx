@@ -8,7 +8,7 @@ import WorkspaceCarousel from "@/app/components/Carousel";
 
 export default function Work() {
   return (
-    <main className="lg:px-10 pb-20 lg:pb-16">
+    <main className="lg:px-10 pb-20 lg:pb-16 pt-16 bg-[#1A1B1E]">
       <section className="flex flex-col">
         <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
           My Work Experience

@@ -16,12 +16,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <div className="lg:flex lg:h-screen flex-col lg:flex-row lg:overflow-hidden px-3 lg:p-10">
-          <div className="hidden lg:block lg:px-0 lg:flex-none lg:w-80">
+      <div className="fixed md:px-0 top-0 w-screen">
+          <Navbar />
+        </div>
+        <div className="lg:flex lg:h-screen flex-col lg:flex-row lg:overflow-hidden px-3 lg:py-10 lg:px-4 bg-[#121314]">
+          <div className="hidden lg:block lg:flex-none px-5 mt-9 bg-[#121314]">
             <Sidebar />
           </div>
-          <div className="lg:flex-grow lg:overflow-y-auto">
+          <div className="lg:flex-grow lg:overflow-y-auto bg-[#1A1B1E]">
             {children}
             <Footer />
           </div>

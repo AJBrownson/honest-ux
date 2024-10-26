@@ -2,7 +2,7 @@ import ContactForm from "@/app/components/ContactForm";
 
 export default function Contact() {
   return (
-    <main className="lg:px-10 pb-[156px] lg:pb-32">
+    <main className="lg:px-10 pt-24 pb-[156px] lg:pb-32 bg-[#1A1B1E]">
         <div className="w-full max-w-lg">
       <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
         Get in touch

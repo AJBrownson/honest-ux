@@ -2,7 +2,7 @@ import Creatives from "@/app/components/Creations";
 
 export default function Creations() {
   return (
-    <main className="lg:px-10 pb-[387px] lg:pb-16">
+    <main className="lg:px-10 pb-[387px] lg:pb-16 pt-16 bg-[#1A1B1E]">
       <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
         Creations
       </h1>

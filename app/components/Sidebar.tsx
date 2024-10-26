@@ -8,7 +8,7 @@ import Socials from "./Socials";
 export default function Sidebar() {
   return (
     <>
-      <section className="flex flex-col gap-5 border border-slate-700 rounded-lg px-2 pt-2 pb-5 font-poppins">
+      <section className="bg-[#121314] flex flex-col gap-5 border border-slate-700 rounded-lg px-2 pt-2 pb-5 font-poppins">
         <Image src={Portrait} alt="Profile picture" className="w-[309px] h-[280px] object-contain" />
         <div className="flex flex-col px-3">
           <h1 className="text-base text-[#F9F9F9] font-semibold">Honest</h1>
