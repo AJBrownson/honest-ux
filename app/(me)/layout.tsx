@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 
 
 export const metadata: Metadata = {
@@ -21,7 +22,10 @@ export default function RootLayout({
           <div className="hidden lg:block lg:px-0 lg:flex-none lg:w-80">
             <Sidebar />
           </div>
-          <div className="lg:flex-grow lg:overflow-y-auto">{children}</div>
+          <div className="lg:flex-grow lg:overflow-y-auto">
+            {children}
+            <Footer />
+            </div>
         </div>
       </body>
     </html>
