@@ -4,7 +4,7 @@ import Logo from "../public/logo.png";
 export default function Footer() {
   return (
     <>
-      <footer className="w-full md:max-w-[700px] flex justify-between items-center border-t-[1px] bg-[#1A1B1E] border-[#2F3037] py-3 mx-auto">
+      <footer className="w-full md:max-w-[700px] flex justify-between items-center border-t-[1px] border-[#2F3037] py-3 mx-auto">
         <div className="flex items-center divide-x-2 divide-[#2F3037] gap-x-5">
           <span className="flex items-center space-x-2">
             <Image

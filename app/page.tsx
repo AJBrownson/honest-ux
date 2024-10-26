@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "./public/logo.png";
 import CarIcon from "./public/car-05.png";
-import Portrait from "./public/portrait.png";
+import Portrait from "./public/home-portrait.png";
 import Shop from "./public/shop.png";
 import Footer from "./components/Footer";
 
@@ -13,7 +13,7 @@ export default function Home() {
         <div className="max-w-[688px] flex flex-col justify-center items-center">
           {/* logo */}
           <div className="pt-10">
-            <Image src={Logo} alt="Honest's Logo" />
+            <Image src={Logo} alt="Honest's Logo" className="w-8 h-8 lg:w-16 lg:h-16 object-contain" />
           </div>
 
           <p className="text-[#A7AAB4] font-medium text-justify md:text-center text-xs md:text-base mt-14">
@@ -47,7 +47,7 @@ export default function Home() {
             <div className="flex gap-x-4 md:gap-x-8">
               <Link href="/about">
                 <div className="border border-[#232529] rounded-lg p-2 bg-[#232529]">
-                  <Image src={Portrait} alt="Honest's Portrait" />
+                  <Image src={Portrait} alt="Honest's Portrait" className="lg:w-[242px] lg:h-[224px] object-contain " />
                   <div className="pt-4 pb-2 px-2">
                     <p className="text-[#A7AAB4] text-[10px] md:text-xs">
                       About Honest

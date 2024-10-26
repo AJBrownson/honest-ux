@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Footer from "./components/Footer";
-
 
 const neuePower = localFont({
   src: "./fonts/NeuePower-Ultra.woff",
   variable: "--font-neue-power",
-})
+});
 
 const poppins = localFont({
   src: [
@@ -21,7 +19,7 @@ const poppins = localFont({
     },
   ],
   variable: "--font-poppins",
-})
+});
 
 export const metadata: Metadata = {
   title: "Honest UX | Portfolio Site",
@@ -36,10 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${neuePower.variable} ${poppins.variable} antialiased`}
+        className={`${neuePower.variable} ${poppins.variable} antialiased bg-[#121314]`}
       >
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );

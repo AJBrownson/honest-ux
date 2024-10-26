@@ -10,14 +10,14 @@ export default function Navbar() {
   return (
     <>
       <header className="flex justify-between lg:px-10 pt-5 pb-5 bg-[#121314]">
-        <div className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <Image
             src={Logo}
             alt="Honest's Logo"
             className="w-6 h-6 md:w-8 md:h-8 object-cover"
           />
           <p className="text-[#F5F5F5] text-[10px] md:text-sm">Onest</p>
-        </div>
+        </Link>
 
         <nav className="flex items-center gap-x-8">
           <ul className="flex gap-x-5">

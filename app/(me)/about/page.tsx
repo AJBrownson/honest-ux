@@ -7,17 +7,17 @@ import Accordion from "@/app/components/Accordion";
 
 export default function About() {
   return (
-    <main className="lg:px-10 pt-24 pb-[156px] lg:pb-32 bg-[#1A1B1E]">
+    <main className="lg:px-24 pt-24 pb-[156px] lg:pb-32 bg-[#1A1B1E]">
       <section>
         <p className="text-[#A7AAB4] text-[10px] md:text-xs font-poppins font-medium">
           Dieter Rams
         </p>
-        <p className="font-neuePower text-xl lg:text-4xl">
+        <p className="font-neuePower text-xl lg:text-3xl">
           Good Design is Long Lasting
         </p>
       </section>
 
-      <section className="mt-10 lg:mt-5 flex flex-col lg:flex-row justify-between items-center lg:gap-x-16">
+      <section className="mt-10 lg:mt-5 flex flex-col lg:flex-row justify-between items-center lg:gap-x-12">
         <Image
           src={Image1}
           alt="Honest sitting in a bar with arms crossed"
