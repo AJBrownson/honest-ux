@@ -5,6 +5,7 @@ import Star from "@/app/public/Star 1.png";
 import PersonalProjects from "@/app/components/PersonalCards";
 import WorkProjects from "@/app/components/WorkCards";
 import WorkspaceCarousel from "@/app/components/Carousel";
+import Testimonials from "@/app/components/Testimonials";
 
 export default function Work() {
   return (
@@ -63,6 +64,7 @@ export default function Work() {
         <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-[#A7AAB4]">
           Here are thoughts from those I've worked with
         </p>
+        <Testimonials />
       </section>
     </main>
   );
