@@ -9,17 +9,17 @@ import Dlhover from "@/app/public/download-hover.png";
 export default function Sidebar() {
   return (
     <>
-      <section className="bg-[#121314] flex flex-col gap-y-1 border border-slate-700 rounded-lg px-2 pt-2 pb-5 font-poppins">
+      <section className="bg-[#121314] flex flex-col border border-slate-700 rounded-lg px-2 pb-5 pt-2 font-poppins">
         <Image
           src={Portrait}
           alt="Profile picture"
-          className="w-[309px] h-[280px] object-contain"
+          className="w-[309px] h-auto object-contain"
         />
-        <div className="flex flex-col px-3">
+        <div className="flex flex-col px-2 mt-3 mb-5">
           <h1 className="text-base text-[#F9F9F9] font-semibold">Honest</h1>
           <p className="text-sm text-[#A7AAB4] font-medium">Product Designer</p>
         </div>
-        <div className="flex flex-col gap-y-3 px-3">
+        <div className="flex flex-col gap-y-3 px-2">
           <Link
             href="https://docs.google.com"
             target="_blank"
@@ -39,7 +39,7 @@ export default function Sidebar() {
             </button>
           </Link>
 
-          <div className="bg-[#1A1B1E] flex flex-col py-2 px-4 rounded-xl">
+          <div className="bg-[#1A1B1E] flex flex-col gap-y-1 py-2 px-4 rounded-xl mt-2">
             <TechStack />
             <Socials />
           </div>
