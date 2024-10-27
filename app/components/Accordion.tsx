@@ -1,6 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useState, SetStateAction } from "react";
+
+import ArrowUp from "@/app/public/arrow-up.png";
+import ArrowDown from "@/app/public/arrow-down.png";
 
 export default function Accordion() {
   const data = [
@@ -59,7 +63,7 @@ export default function Accordion() {
                 <p className="font-medium text-[#A7AAB4] font-poppins text-[10px] lg:text-sm">
                   {item.duration}
                 </p>
-                <span>{openIndex === index ? <p>-</p> : <p>+</p>}</span>
+                <span>{openIndex === index ? <Image src={ArrowUp} alt="" className="w-4 h-4" /> : <Image src={ArrowDown} alt="" className="w-4 h-4" />}</span>
               </div>
             </div>
             {openIndex === index && (
