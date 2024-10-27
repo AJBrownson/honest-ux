@@ -3,29 +3,40 @@ import Link from "next/link";
 import Portrait from "../public/portrait.png";
 import TechStack from "./TechStack";
 import Socials from "./Socials";
-
+import Dl from "@/app/public/download.png";
+import Dlhover from "@/app/public/download-hover.png";
 
 export default function Sidebar() {
   return (
     <>
-      <section className="bg-[#121314] flex flex-col gap-5 border border-slate-700 rounded-lg px-2 pt-2 pb-5 font-poppins">
-        <Image src={Portrait} alt="Profile picture" className="w-[309px] h-[280px] object-contain" />
+      <section className="bg-[#121314] flex flex-col gap-y-1 border border-slate-700 rounded-lg px-2 pt-2 pb-5 font-poppins">
+        <Image
+          src={Portrait}
+          alt="Profile picture"
+          className="w-[309px] h-[280px] object-contain"
+        />
         <div className="flex flex-col px-3">
           <h1 className="text-base text-[#F9F9F9] font-semibold">Honest</h1>
-           <p className="text-sm text-[#A7AAB4] font-medium">
-            Product Designer
-          </p>
+          <p className="text-sm text-[#A7AAB4] font-medium">Product Designer</p>
         </div>
         <div className="flex flex-col gap-y-3 px-3">
           <Link
             href="https://docs.google.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-center py-2 px-4 gap-x-2 border border-[#2F3037] rounded-full"
+            className=""
           >
-          
-            <p className="text-[#A7AAB4] font-poppins text-sm font-medium">View Resume</p>
-            <p>+</p>
+            <button className="group text-[#A7AAB4] hover:text-[#F9F9F9] font-poppins text-sm font-medium w-full flex justify-between items-center py-2 px-4 gap-x-2 border border-[#2F3037] hover:bg-[#474853] rounded-full">
+              View Resume
+              <div className="relative">
+                <Image src={Dl} alt="Download" className="w-6 h-6" />
+                <Image
+                  src={Dlhover}
+                  alt="Download hover"
+                  className="absolute top-0 left-0 w-6 h-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                />
+              </div>
+            </button>
           </Link>
 
           <div className="bg-[#1A1B1E] flex flex-col py-2 px-4 rounded-xl">
