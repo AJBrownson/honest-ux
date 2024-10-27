@@ -28,7 +28,7 @@ export default function Sidebar() {
             <p>+</p>
           </Link>
 
-          <div className="bg-[#1A1B1E] flex flex-col gap-y-4 py-2 px-4 rounded-xl">
+          <div className="bg-[#1A1B1E] flex flex-col py-2 px-4 rounded-xl">
             <TechStack />
             <Socials />
           </div>

@@ -24,6 +24,15 @@ const config: Config = {
         poppins: [`var(--font-poppins)`],
       },
     },
+    animation: {
+      "infinite-scroll": "infinite-scroll 10s linear infinite",
+    },
+    keyframes: {
+      "infinite-scroll": {
+        from: { transform: "translateX(0)" },
+        to: { transform: "translateX(-100%)" },
+      },
+    },
   },
   plugins: [],
 };
