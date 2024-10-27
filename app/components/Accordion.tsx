@@ -8,19 +8,22 @@ export default function Accordion() {
       project: "Softcash",
       title: "Product Designer",
       duration: "Sept 2024 - Present",
-      description: "lorem",
+      description:
+        "For the SofCash fintech product, I single handedly developed the brand identity, conducted user research, designed the mobile app interface, and created the marketing landing page. This work ensured a strong visual presence and effective user experience.",
     },
     {
       project: "Solgacy",
       title: "UXUI Designer",
       duration: "July 2024 - Aug 2024",
-      description: "lorem",
+      description:
+        "For Solgacy, a web3 roulette platform for stakers, I designed the user interface after researching web3 operations. I aimed to create a simple and engaging experience for users.",
     },
     {
       project: "Hydra",
       title: "UXUI Designer",
       duration: "Nov 2022 - March 2023",
-      description: "lorem",
+      description:
+        "I worked with a design team to gather user feedback for the Hydra app. I created user flows, wireframes, and prototypes, and designed user-friendly interfaces. I also collaborated with developers and stakeholders to ensure our designs were effective and met technical requirements.",
     },
   ];
 
@@ -53,15 +56,17 @@ export default function Accordion() {
                 </p>
               </div>
               <div className="flex items-center gap-x-3">
-                <p className="font-medium text-[#A7AAB4] font-poppins text-[10px] lg:text-sm">{item.duration}</p>
-                <span>
-              {openIndex === index ? <p>-</p> : <p>+</p>}
-              </span>
+                <p className="font-medium text-[#A7AAB4] font-poppins text-[10px] lg:text-sm">
+                  {item.duration}
+                </p>
+                <span>{openIndex === index ? <p>-</p> : <p>+</p>}</span>
               </div>
             </div>
             {openIndex === index && (
               <div className="pb-3">
-                <p className="font-medium text-[#A7AAB4] font-poppins text-[10px] lg:text-sm">{item.description}</p>
+                <p className="font-medium text-[#A7AAB4] font-poppins text-[10px] lg:text-sm">
+                  {item.description}
+                </p>
               </div>
             )}
           </div>
