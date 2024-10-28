@@ -26,7 +26,7 @@ export default function PersonalProjects() {
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((item, index) => (
           <div key={index} className="w-full border border-[#474853] bg-[#232529] rounded-xl p-2">
-            <div className="bg-[#D1D1D2] w-[242px] h-[224px] rounded-lg"></div>
+            <div className="bg-[#D1D1D2] w-full lg:w-[242px] h-[224px] rounded-lg"></div>
             <div className="mt-3 px-2">
               <p className="font-poppins text-[10px] lg:text-xs text-[#A7AAB4]">
                 {item.tag}

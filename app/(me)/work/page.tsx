@@ -1,11 +1,15 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-
 import Star from "@/app/public/Star 1.png";
 import PersonalProjects from "@/app/components/PersonalCards";
 import WorkProjects from "@/app/components/WorkCards";
 import WorkspaceCarousel from "@/app/components/Carousel";
 import Testimonials from "@/app/components/Testimonials";
+
+export const metadata: Metadata = {
+  title: "My Work",
+};
 
 export default function Work() {
   return (

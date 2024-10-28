@@ -17,7 +17,7 @@ export default function WorkProjects() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 w-full">
+      <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
         {data.map((item, index) => (
           <div key={index} className="flex-1">
             <div className="w-full border border-[#474853] bg-[#232529] rounded-xl p-2">

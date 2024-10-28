@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import Creatives from "@/app/components/Creations";
+
+export const metadata: Metadata = {
+  title: "My Creations",
+};
 
 export default function Creations() {
   return (
