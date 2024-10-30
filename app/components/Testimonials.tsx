@@ -3,33 +3,34 @@ import Steve from "@/app/public/steve.svg"
 import Brown from "@/app/public/brown.svg"
 import Justus from "@/app/public/justus.svg"
 
+
 export default function Testimonials() {
   const testimonials = [
     {
         name: "Mr Morgan",
         role: "CEO Fitgeng",
-        image: "/justus.svg",
+        image: "/public/portrait.png",
         quote:
           "Working with Honest was a game-changer for our project. His creativity and attention to detail exceeded our expectations! I'm glad I met you. Thank you.",
       },
     {
       name: "Mr Steve",
       role: "Manager",
-      image: "/steve.svg",
+      image: "/public/steve.svg",
       quote:
         "Working with Honest was a game-changer for our project. His creativity and attention to detail exceeded our expectations! I'm glad I met you. Thank you.",
     },
     {
       name: "Mr Brown",
       role: "Manager Phonecity",
-      image: "/brown.svg",
+      image: "/public/brown.svg",
       quote:
         "Working with Honest was a game-changer for our project. His creativity and attention to detail exceeded our expectations! I'm glad I met you. Thank you.",
     },
   ];
 
   return (
-    <div className="flex space-x-4 overflow-x-auto">
+    <div className="flex space-x-4 overflow-x-auto font-poppins">
       {testimonials.map((testimonial, index) => (
         <div
           key={index}
