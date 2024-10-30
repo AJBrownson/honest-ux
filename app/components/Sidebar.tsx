@@ -9,7 +9,11 @@ import Dlhover from "@/app/public/download-hover.png";
 export default function Sidebar() {
   return (
     <>
-      <section className="bg-[#121314] flex flex-col border border-slate-700 rounded-lg px-2 pb-5 pt-2 font-poppins">
+      <section className="relative bg-[#121314] flex flex-col border border-slate-700 rounded-lg px-2 pb-5 pt-2 font-poppins">
+       <div className="absolute -top-16 -right-5 bg-[#1A1B1E] p-4">
+        <p>hover to see me smile</p>
+       </div>
+       
         <Image
           src={Portrait}
           alt="Profile picture"
