@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import PS from "@/app/public/adobe-photoshop.svg";
-import AI from "@/app/public/illustrator.png";
-import Figma from "@/app/public/figma.svg";
-import GPT from "@/app/public/chatgpt.png";
+import PS from "@/public/adobe-photoshop.svg";
+import AI from "@/public/illustrator.png";
+import Figma from "@/public/figma.svg";
+import GPT from "@/public/chatgpt.png";
 
 export default function TechStack() {
   return (

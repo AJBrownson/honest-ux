@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useState, SetStateAction } from "react";
 
-import ArrowUp from "@/app/public/arrow-up.png";
-import ArrowDown from "@/app/public/arrow-down.png";
+import ArrowUp from "@/public/arrow-up.png";
+import ArrowDown from "@/public/arrow-down.png";
 
 export default function Accordion() {
   const data = [

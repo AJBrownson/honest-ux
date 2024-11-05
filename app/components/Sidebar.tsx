@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import Portrait from "../public/portrait.png";
+import Portrait from "@/public/portrait.png";
 import TechStack from "./TechStack";
 import Socials from "./Socials";
-import Dl from "@/app/public/download.png";
-import Dlhover from "@/app/public/download-hover.png";
+import Dl from "@/public/download.png";
+import Dlhover from "@/public/download-hover.png";
 
 export default function Sidebar() {
   return (

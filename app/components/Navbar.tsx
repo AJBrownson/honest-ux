@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../public/logo.png";
+import Logo from "@/public/logo.png";
 
-import Arrow from "@/app/public/arrow-up-right-03.png";
+import Arrow from "@/public/arrow-up-right-03.png";
 
 export default function Navbar() {
   return (
@@ -16,7 +16,7 @@ export default function Navbar() {
             alt="Honest's Logo"
             className="w-6 h-6 md:w-8 md:h-8 object-cover"
           />
-          <p className="text-[#F5F5F5] text-[10px] md:text-sm">Onest</p>
+          <p className="text-[#F5F5F5] text-[10px] md:text-sm md:hidden">Onest</p>
         </Link>
 
         <nav className="flex items-center gap-x-8">

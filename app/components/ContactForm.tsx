@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Sent from "@/app/public/sent.png"
+import Sent from "@/public/sent.png"
 import { contactEmailTemplate } from "@/emailTemplates/contactTemplate";
 
 

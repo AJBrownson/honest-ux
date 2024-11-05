@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Star from "@/app/public/Star 1.png";
+import Star from "@/public/Star 1.png";
 import PersonalProjects from "@/app/components/PersonalCards";
 import WorkProjects from "@/app/components/WorkCards";
 import WorkspaceCarousel from "@/app/components/Carousel";
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Work() {
   return (
-    <main className="lg:px-24 pb-20 lg:pb-16 pt-16 bg-[#1A1B1E]">
+    <main className="lg:px-24 pb-20 lg:pb-16 pt-24 bg-[#1A1B1E]">
       <section className="flex flex-col">
         <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
           My Work Experience

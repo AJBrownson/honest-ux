@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Creations() {
   return (
-    <main className="lg:px-24 pb-[387px] lg:pb-16 pt-16 bg-[#1A1B1E]">
+    <main className="lg:px-24 pb-[387px] lg:pb-16 pt-24 bg-[#1A1B1E]">
       <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
         Creations
       </h1>

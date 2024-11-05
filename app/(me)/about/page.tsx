@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Image1 from "../../public/Image1.png";
-import Image2 from "../../public/Image2.png";
-import Image2Mobile from "../../public/Image2-mobile.png";
-import Image3 from "../../public/Image3.png";
+import Image1 from "@/public/Image1.png"
+import Image2 from "@/public/Image2.png";
+import Image2Mobile from "@/public/Image2-mobile.png";
+import Image3 from "@/public/Image3.png";
 import Accordion from "@/app/components/Accordion";
 
 export const metadata: Metadata = {

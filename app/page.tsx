@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "./public/logo.png";
-import CarIcon from "./public/car-05.png";
-import Portrait from "./public/home-portrait.png";
-import Shop from "./public/shop.png";
+import Logo from "@/public/logo.png";
+import CarIcon from "@/public/car-05.png";
+import Portrait from "@/public/home-portrait.png";
+import Shop from "@/public/shop.png";
 import Footer from "./components/Footer";
 
 export default function Home() {

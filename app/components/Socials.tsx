@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Mail from "@/app/public/mail.png";
-import MailHover from "@/app/public/mail-hover.png";
-import Twitter from "@/app/public/twitter.png";
-import TwitterHover from "@/app/public/twitter-hover.png";
-import Li from "@/app/public/linkedin.png";
-import LiHover from "@/app/public/linkedin-hover.png";
-import Insta from "@/app/public/instagram.png";
-import InstaHover from "@/app/public/instagram-hover.png";
-import Be from "@/app/public/behance.png";
-import BeHover from "@/app/public/behance-hover.png";
+import Mail from "@/public/mail.png";
+import MailHover from "@/public/mail-hover.png";
+import Twitter from "@/public/twitter.png";
+import TwitterHover from "@/public/twitter-hover.png";
+import Li from "@/public/linkedin.png";
+import LiHover from "@/public/linkedin-hover.png";
+import Insta from "@/public/instagram.png";
+import InstaHover from "@/public/instagram-hover.png";
+import Be from "@/public/behance.png";
+import BeHover from "@/public/behance-hover.png";
 
 // const socialLinks = [
 //   { normal: Mail, hover: MailHover, alt: "Mail" },
