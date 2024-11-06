@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Steve from "@/app/public/steve.svg"
-import Brown from "@/app/public/brown.svg"
-import Justus from "@/app/public/justus.svg"
+import Steve from "@/public/steve.svg"
+import Brown from "@/public/brown.svg"
+import Justus from "@/public/justus.svg"
 
 
 export default function Testimonials() {
@@ -9,21 +9,21 @@ export default function Testimonials() {
     {
         name: "Mr Morgan",
         role: "CEO Fitgeng",
-        image: "/public/portrait.png",
+        image: Justus,
         quote:
           "Working with Honest was a game-changer for our project. His creativity and attention to detail exceeded our expectations! I'm glad I met you. Thank you.",
       },
     {
       name: "Mr Steve",
       role: "Manager",
-      image: "/public/steve.svg",
+      image: Steve,
       quote:
         "Working with Honest was a game-changer for our project. His creativity and attention to detail exceeded our expectations! I'm glad I met you. Thank you.",
     },
     {
       name: "Mr Brown",
       role: "Manager Phonecity",
-      image: "/public/brown.svg",
+      image: Brown,
       quote:
         "Working with Honest was a game-changer for our project. His creativity and attention to detail exceeded our expectations! I'm glad I met you. Thank you.",
     },
