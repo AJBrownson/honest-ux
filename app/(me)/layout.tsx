@@ -43,7 +43,7 @@ export default function RootLayout({
           <div className="hidden lg:block lg:flex-none px-5 mt-9 bg-[#121314] w-[325px]">
             <Sidebar />
           </div>
-          <div className="lg:flex-grow lg:overflow-y-auto bg-[#1A1B1E]">
+          <div className="lg:flex-grow lg:overflow-y-auto bg-[#171717]">
             {children}
             <Footer />
           </div>

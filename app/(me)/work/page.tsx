@@ -16,7 +16,7 @@ export default function Work() {
     <main className="lg:px-24 pb-20 lg:pb-16 pt-24 bg-[#1A1B1E]">
       <section className="flex flex-col">
         <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
-          My Work Experience
+          Work
         </h1>
         <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-[#A7AAB4]">
           A handpicked showcase of my latest projects
