@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Star from "@/public/Star 1.png";
+import Note from "@/public/note.png";
 import PersonalProjects from "@/app/components/PersonalCards";
 import WorkProjects from "@/app/components/WorkCards";
 import WorkspaceCarousel from "@/app/components/Carousel";
@@ -28,12 +28,12 @@ export default function Work() {
       </section>
 
       <section className="mt-20 lg:mt-10">
-        <span className="flex justify-between items-center">
+        <span className="flex space-x-5 lg:space-x-7">
           <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
             Personal Projects
           </h1>
           <span className="flex items-center gap-x-2">
-            <Image src={Star} alt="" />
+            <Image src={Note} alt="" className="w-4 h-4 lg:w-5 lg:h-5" />
             <p className="text-[#FFEB3B] font-poppins font-medium text-[10px] lg:text-sm">
               Case studies
             </p>

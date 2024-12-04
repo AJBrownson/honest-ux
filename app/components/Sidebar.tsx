@@ -10,8 +10,8 @@ export default function Sidebar() {
   return (
     <>
       <section className="relative bg-[#121314] flex flex-col border border-slate-700 rounded-lg px-2 pb-5 pt-2 font-poppins">
-       <div className="absolute -top-16 -right-5 bg-[#1A1B1E] p-4">
-        <p>hover to see me smile</p>
+       <div className="absolute -top-16 -right-5 bg-[#1A1B1E] py-3 px-4 rounded-xl border border-[#292929]">
+        <p className="text-[#E3E3E3] text-sm font-neuePower">hover <span className="text-[#A8A8A8]">to see me</span> smile!</p>
        </div>
        
         <Image
