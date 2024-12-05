@@ -22,7 +22,7 @@ export default function PersonalProjects() {
 
   return (
     <>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-4">
         {data.map((item, index) => (
           <div key={index} className="w-full border border-stroke bg-bg rounded-xl p-2">
             <div className="bg-[#D1D1D2] w-full h-[224px] rounded-lg"></div>
