@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${neuePower.variable} ${poppins.variable} antialiased bg-[#121314]`}
+        className={`${neuePower.variable} ${poppins.variable} antialiased`}
       >
         {children}
       </body>

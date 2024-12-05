@@ -22,7 +22,7 @@ import BeHover from "@/public/behance-hover.png";
 
 const socialLinks = [
     { normal: Mail, hover: MailHover, alt: "Mail", url: "mailto:honest@example.com" },
-    { normal: Twitter, hover: TwitterHover, alt: "Twitter", url: "https://twitter.com/honest" },
+    { normal: Twitter, hover: TwitterHover, alt: "Twitter", url: "https://x.com/honest" },
     { normal: Li, hover: LiHover, alt: "LinkedIn", url: "https://www.linkedin.com/in/honest" },
     { normal: Insta, hover: InstaHover, alt: "Instagram", url: "https://www.instagram.com/honest" },
     { normal: Be, hover: BeHover, alt: "Behance", url: "https://www.behance.net/honest" },
@@ -32,7 +32,7 @@ const socialLinks = [
 export default function Socials() {
   return (
     <>
-      <h1 className="text-[#F9F9F9] font-poppins font-medium text-xs">
+      <h1 className="text-titleText font-poppins font-medium text-xs">
         Socials
       </h1>
 

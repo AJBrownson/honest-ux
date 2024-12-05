@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="lg:px-24 pt-24 pb-[156px] lg:pb-32 bg-[#1A1B1E]">
+    <main className="px-4 lg:px-24 pt-24 pb-[156px] lg:pb-32 bg-semiBg">
       <section>
-        <p className="text-[#A7AAB4] text-[10px] md:text-xs font-poppins font-medium">
+        <p className="text-bodyText text-[10px] md:text-xs font-poppins font-medium">
           Dieter Rams
         </p>
-        <p className="font-neuePower text-xl lg:text-3xl">
+        <p className="font-neuePower text-xl lg:text-3xl text-titleText">
           Good Design is Long Lasting
         </p>
       </section>
@@ -30,8 +30,8 @@ export default function About() {
         />
 
         <div className="lg:order-first mt-10 lg:mt-0 flex flex-col gap-y-3 font-poppins font-medium">
-          <p className="text-[#F9F9F9] text-xs lg:text-sm">My Story</p>
-          <p className="text-xs lg:text-sm text-[#A7AAB4] tracking-wide leading-tight">
+          <p className="text-titleText text-xs lg:text-sm">My Story</p>
+          <p className="text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
             I was born and raised in Abuja, Nigeria. Growing up, I was an active
             kid into sports, making crafts, sketching and of course, trying new
             foods! Oh, wait… did I forget to mention I love food? My bad! 😂
@@ -55,22 +55,22 @@ export default function About() {
           className="lg:hidden"
         />
         <div className="lg:order-last mt-10 lg:mt-0 flex flex-col gap-y-3 font-poppins font-medium">
-          <p className="text-[#F9F9F9] text-xs lg:text-sm">
+          <p className="text-titleText text-xs lg:text-sm">
             How Design Won Me Over
           </p>
-          <p className="text-xs lg:text-sm text-[#A7AAB4] tracking-wide leading-tight">
+          <p className="text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
             In 2021, I joined my school’s internship program and tried
             everything from coding, data analysis, and even cyber security.
             Honestly, I was just throwing things around to see what stuck. But
             that same year, design caught my eye, probably because I’ve always
             loved art.
           </p>
-          <p className="pt-1 text-xs lg:text-sm text-[#A7AAB4] tracking-wide leading-tight">
+          <p className="pt-1 text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
             One day, I stumbled upon a Figma post filled with threads labeled
             #design. Curious, I dove in and found myself solving user problems
             by dragging shapes around. It was a bit strange, but I loved it!{" "}
           </p>
-          <p className="pt-1 text-xs lg:text-sm text-[#A7AAB4] tracking-wide leading-tight">
+          <p className="pt-1 text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
             When my internship ended, I realized design was my path. I took some
             Udemy courses (thanks, Dan Walter Scott!) and spent the last two
             years improving my skills and getting quick with the tools.
@@ -85,29 +85,29 @@ export default function About() {
           className="lg:w-[336px] lg:h-[372px] object-contain"
         />
         <div className="lg:order-first mt-10 lg:mt-0 flex flex-col gap-y-3 font-poppins font-medium">
-          <p className="text-[#F9F9F9] text-xs lg:text-sm">
+          <p className="text-titleText text-xs lg:text-sm">
             When I’m Not Designing
           </p>
-          <p className="text-xs lg:text-sm text-[#A7AAB4] tracking-wide leading-tight">
+          <p className="text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
             In my free time, you’ll catch me jamming to my favorite playlist,
             brainstorming new ideas, and keeping up with the latest design
             trends. Gotta keep things fresh! Right now, I’m diving into motion
             design and Web3 design. Who knew design could be so lively?
           </p>
-          <p className="pt-1 text-xs lg:text-sm text-[#A7AAB4] tracking-wide leading-tight">
+          <p className="pt-1 text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
             When I'm not designing, you’ll find me watching movies, hitting the
             gym (trying to balance all those snacks), and staying updated on
             what’s new in the design world. After all, I can’t let my creativity
             go flat!{" "}
           </p>
-          <p className="text-xs lg:text-sm text-[#F9F9F9] tracking-wide leading-tight">
+          <p className="text-xs lg:text-sm text-titleText tracking-wide leading-tight">
             Thanks for taking a peek into my world!
           </p>
         </div>
       </section>
 
       <section className="mt-16 lg:mt-20">
-        <p className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower mb-6">
+        <p className="text-titleText text-xl lg:text-3xl font-neuePower mb-6">
           My Work Experience
         </p>
         <Accordion />

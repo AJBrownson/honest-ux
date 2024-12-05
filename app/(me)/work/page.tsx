@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 
 export default function Work() {
   return (
-    <main className="lg:px-24 pb-20 lg:pb-16 pt-24 bg-[#1A1B1E]">
+    <main className="px-4 lg:px-24 pb-20 lg:pb-16 pt-24 bg-semiBg">
       <section className="flex flex-col">
-        <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
+        <h1 className="text-titleText text-xl lg:text-3xl font-neuePower">
           Work
         </h1>
-        <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-[#A7AAB4]">
+        <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-bodyText">
           A handpicked showcase of my latest projects
         </p>
 
@@ -29,7 +29,7 @@ export default function Work() {
 
       <section className="mt-20 lg:mt-10">
         <span className="flex space-x-5 lg:space-x-7">
-          <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
+          <h1 className="text-titleText text-xl lg:text-3xl font-neuePower">
             Personal Projects
           </h1>
           <span className="flex items-center gap-x-2">
@@ -40,7 +40,7 @@ export default function Work() {
           </span>
         </span>
 
-        <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-[#A7AAB4]">
+        <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-bodyText">
           A handpicked collection of my creative projects
         </p>
         <div className="mt-6 flex">
@@ -49,10 +49,10 @@ export default function Work() {
       </section>
 
       <section className="mt-20 lg:mt-10">
-        <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
+        <h1 className="text-titleText text-xl lg:text-3xl font-neuePower">
           My Workspace
         </h1>
-        <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-[#A7AAB4]">
+        <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-bodyText">
           Here, I learn, experiment with designs, and try out new ideas.
         </p>
 
@@ -62,10 +62,10 @@ export default function Work() {
       </section>
 
       <section className="mt-20 lg:mt-10">
-        <h1 className="text-[#F9F9F9] text-xl lg:text-3xl font-neuePower">
+        <h1 className="text-titleText text-xl lg:text-3xl font-neuePower">
           Testimonials
         </h1>
-        <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-[#A7AAB4]">
+        <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-bodyText">
           Here are thoughts from those I've worked with
         </p>
         <Testimonials />

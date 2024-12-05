@@ -52,15 +52,15 @@ export default function Accordion() {
               onClick={() => handleToggle(index)}
             >
               <div className="flex flex-col gap-y-1">
-                <p className="text-[#F9F9F9] font-poppins font-semibold text-xs lg:text-base">
+                <p className="text-titleText font-poppins font-semibold text-xs lg:text-base">
                   {item.project}
                 </p>
-                <p className="font-medium text-[#A7AAB4] font-poppins text-[10px] lg:text-sm">
+                <p className="font-medium text-bodyText font-poppins text-[10px] lg:text-sm">
                   {item.title}
                 </p>
               </div>
               <div className="flex items-center gap-x-3">
-                <p className="font-medium text-[#A7AAB4] font-poppins text-[10px] lg:text-sm">
+                <p className="font-medium text-bodyText font-poppins text-[10px] lg:text-sm">
                   {item.duration}
                 </p>
                 <span>{openIndex === index ? <Image src={ArrowUp} alt="" className="w-4 h-4" /> : <Image src={ArrowDown} alt="" className="w-4 h-4" />}</span>
@@ -68,7 +68,7 @@ export default function Accordion() {
             </div>
             {openIndex === index && (
               <div className="pb-3">
-                <p className="font-medium text-[#A7AAB4] font-poppins text-[10px] lg:text-sm">
+                <p className="font-medium text-bodyText font-poppins text-[10px] lg:text-sm">
                   {item.description}
                 </p>
               </div>

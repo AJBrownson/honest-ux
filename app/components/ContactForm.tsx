@@ -55,42 +55,42 @@ export default function ContactForm() {
     <>
       <form 
         onSubmit={handleSubmit}
-        className="w-full max-w-lg flex flex-col gap-y-5 bg-[#232529] border border-slate-700 p-4 rounded-xl"
+        className="w-full max-w-lg flex flex-col gap-y-5 bg-bg border border-stroke p-4 rounded-xl"
       >
-      <div className="flex flex-col gap-y-3">
-          <label className="text-[#F9F9F9] text-xs lg:text-sm font-poppins font-medium">Name</label>
+      <div className="flex flex-col gap-y-3 mt-2">
+          <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">Name</label>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="bg-[#121314] text-[#A7AAB4] font-poppins font-medium text-xs lg:text-sm p-3"
+            className="bg-semiBg border border-stroke rounded-lg text-softBodyText font-poppins font-medium text-xs lg:text-sm p-3"
             placeholder="Mark John"
             required
           />
         </div>
 
         <div className="flex flex-col gap-y-3">
-          <label className="text-[#F9F9F9] text-xs lg:text-sm font-poppins font-medium">Email</label>
+          <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">Email</label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="bg-[#121314] text-[#A7AAB4] font-poppins font-medium text-xs lg:text-sm p-3"
+            className="bg-semiBg border border-stroke rounded-lg text-softBodyText font-poppins font-medium text-xs lg:text-sm p-3"
             placeholder="example@gmail.com"
             required
           />
         </div>
 
         <div className="flex flex-col gap-y-3">
-          <label className="text-[#F9F9F9] text-xs lg:text-sm font-poppins font-medium">How can i help you?</label>
+          <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">How can i help you?</label>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
             rows={8}
-            className="bg-[#121314] text-[#A7AAB4] font-poppins font-medium text-xs lg:text-sm p-3"
+            className="bg-semiBg border border-stroke rounded-lg text-softBodyText font-poppins font-medium text-xs lg:text-sm p-3"
             placeholder="Share your challenges or vision with me. I'm here to help you bring it to life!"
             required
           ></textarea>

@@ -34,7 +34,7 @@ export default function Testimonials() {
       {testimonials.map((testimonial, index) => (
         <div
           key={index}
-          className="flex-shrink-0 w-[340px] bg-[#1A1B1E] rounded-lg p-6 flex space-x-4"
+          className="flex-shrink-0 w-[340px] bg-bg rounded-lg p-6 flex space-x-4"
         >
           <div className="flex-shrink-0">
             <Image

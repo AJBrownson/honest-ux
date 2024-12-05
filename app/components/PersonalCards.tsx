@@ -24,13 +24,13 @@ export default function PersonalProjects() {
     <>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((item, index) => (
-          <div key={index} className="w-full border border-[#292929] bg-[#0D0D0D] rounded-xl p-2">
+          <div key={index} className="w-full border border-stroke bg-bg rounded-xl p-2">
             <div className="bg-[#D1D1D2] w-full h-[224px] rounded-lg"></div>
             <div className="my-3 px-2">
-              <p className="mb-1 font-poppins text-[10px] lg:text-xs text-[#A7AAB4]">
+              <p className="mb-1 font-poppins text-[10px] lg:text-xs text-bodyText">
                 {item.tag}
               </p>
-              <p className="text-[#F9F9F9] font-poppins font-semibold text-xs lg:text-base">
+              <p className="text-titleText font-poppins font-semibold text-xs lg:text-base">
                 {item.name}
               </p>
             </div>
