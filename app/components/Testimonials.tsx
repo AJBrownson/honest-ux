@@ -1,18 +1,17 @@
 import Image from "next/image";
-import Steve from "@/public/steve.svg"
-import Brown from "@/public/brown.svg"
-import Justus from "@/public/justus.svg"
-
+import Steve from "@/public/steve.svg";
+import Brown from "@/public/brown.svg";
+import Morgan from "@/public/justus.svg";
 
 export default function Testimonials() {
   const testimonials = [
     {
-        name: "Mr Morgan",
-        role: "CEO Fitgeng",
-        image: Justus,
-        quote:
-          "Working with Honest was a game-changer for our project. His creativity and attention to detail exceeded our expectations! I'm glad I met you. Thank you.",
-      },
+      name: "Mr Morgan",
+      role: "CEO Fitgeng",
+      image: Morgan,
+      quote:
+        "Working with Honest was a game-changer for our project. His creativity and attention to detail exceeded our expectations! I'm glad I met you. Thank you.",
+    },
     {
       name: "Mr Steve",
       role: "Manager",
@@ -30,13 +29,14 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className="flex space-x-4 overflow-x-auto font-poppins">
+    <>
+    {/* <div className="flex space-x-4 overflow-x-auto font-poppins">
       {testimonials.map((testimonial, index) => (
         <div
           key={index}
-          className="flex-shrink-0 w-[340px] bg-bg rounded-lg p-6 flex space-x-4"
+          className="flex flex-col md:flex-row bg-bg border border-stroke rounded-lg p-6 space-x-4"
         >
-          <div className="flex-shrink-0">
+          <div className="w-[296px] lg:max-w-[515px] bg-red-500">
             <Image
               src={testimonial.image}
               alt={testimonial.name}
@@ -44,11 +44,13 @@ export default function Testimonials() {
               height={70}
               className="rounded-full"
             />
-          </div>
-          <div>
             <p className="text-white font-bold">{testimonial.name}</p>
             <p className="text-[#A7AAB4]">{testimonial.role}</p>
-            <p className="text-white mt-3">“{testimonial.quote}”</p>
+          </div>
+          <div>
+            <p className="text-bodyText font-poppins font-medium text-xs md:text-sm mt-3">
+              “{testimonial.quote}”
+            </p>
           </div>
         </div>
       ))}
@@ -56,6 +58,25 @@ export default function Testimonials() {
         <button className="p-2 bg-white rounded-full">←</button>
         <button className="p-2 bg-white rounded-full">→</button>
       </div>
+    </div> */}
+    <div className="flex space-x-4 overflow-x-auto">
+      <div className="bg-bg">
+        <div className="">
+        <div className="w-[296px] lg:max-w-[515px]">
+            <Image
+              src={Morgan}
+              alt=""
+              width={70}
+              height={70}
+              className="rounded-full"
+            />
+            <p className="text-titleText font-bold font-poppins text-xs md:text-sm">Mr Morgan</p>
+            <p className="text-bodyText font-poppins text-[10px] md:text-xs">CEO Fitgeng</p>
+          </div>
+        </div>
+
+      </div>
     </div>
+    </>
   );
 }
