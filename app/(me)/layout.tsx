@@ -39,11 +39,11 @@ export default function RootLayout({
         <div className="fixed md:px-0 top-0 w-screen">
           <Navbar />
         </div>
-        <div className="lg:flex lg:h-screen flex-col lg:flex-row lg:overflow-hidden lg:pt-10 lg:px-4 bg-[#121314]">
-          <div className="hidden lg:block lg:flex-none px-5 mt-9 bg-[#121314] w-[325px]">
+        <div className="lg:flex lg:h-screen flex-col lg:flex-row lg:overflow-hidden lg:pt-10 lg:px-4 bg-bg">
+          <div className="hidden lg:block lg:flex-none px-5 mt-9 bg-bg w-[325px]">
             <Sidebar />
           </div>
-          <div className="lg:flex-grow lg:overflow-y-auto bg-[#171717]">
+          <div className="lg:flex-grow lg:overflow-y-auto bg-semiBg">
             {children}
             <Footer />
           </div>
