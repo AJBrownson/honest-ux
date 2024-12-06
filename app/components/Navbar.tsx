@@ -20,7 +20,7 @@ export default function Navbar() {
 
         <nav className="flex items-center gap-x-8">
           <ul className="flex gap-x-5">
-            <Link href="/about">
+            <Link href="/about" className="pb-5 border-b-2 border-blue-400">
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 About
               </li>

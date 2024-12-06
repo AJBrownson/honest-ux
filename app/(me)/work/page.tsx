@@ -65,7 +65,7 @@ export default function Work() {
         <h1 className="text-titleText text-xl lg:text-3xl font-neuePower">
           Testimonials
         </h1>
-        <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-bodyText">
+        <p className="my-3 font-poppins text-[10px] lg:text-sm font-medium text-bodyText">
           Here are thoughts from those I've worked with
         </p>
         <Testimonials />
