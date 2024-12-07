@@ -26,13 +26,13 @@ export default function Navbar() {
             alt="Honest's Logo"
             className="w-6 h-6 md:w-8 md:h-8 object-cover"
           />
-          <p className="text-titleText font-neuePower text-base md:text-sm md:hidden">
+          <p className="text-titleText font-neuePower text-base md:text-sm lg:hidden">
             Onest
           </p>
         </Link>
 
         {/* larger screens navigation */}
-        <nav className="hidden lg:flex items-center gap-x-8">
+        <nav className="hidden md:flex items-center gap-x-8">
           <ul className="flex gap-x-5">
             <Link
               href="/about"
@@ -102,9 +102,11 @@ export default function Navbar() {
             </Link>
 
             <div className="flex flex-col space-y-3">
-              <button className="flex items-center justify-between bg-titleText text-bg font-poppins font-medium text-sm py-4 px-4 rounded-full">
+            <Link href="/contact-me">
+              <button className="w-full flex items-center justify-between bg-titleText text-bg font-poppins font-medium text-sm py-4 px-4 rounded-full">
                 Let’s Talk <Image src={Arrow} alt="" />
               </button>
+              </Link>
               <button className="flex items-center justify-between bg-semiBg text-titleText border border-stroke font-poppins font-medium text-sm py-4 px-4 rounded-full">
                 View Resume{" "}
                 <Image src={Dl} alt="Download" className="w-6 h-6" />

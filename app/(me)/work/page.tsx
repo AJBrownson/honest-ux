@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Work() {
   return (
-    <main className="px-4 lg:px-24 pb-20 lg:pb-16 pt-24 bg-semiBg">
+    <main className="px-6 lg:px-24 pb-20 lg:pb-16 pt-24 bg-semiBg">
       <section className="flex flex-col">
         <h1 className="text-titleText text-xl lg:text-3xl font-neuePower">
           Work

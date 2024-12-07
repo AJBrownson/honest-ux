@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="px-4 lg:px-24 pt-24 pb-[156px] lg:pb-32 bg-semiBg">
+    <main className="px-6 lg:px-24 pt-24 pb-[156px] lg:pb-32 bg-semiBg">
       <section>
         <p className="text-bodyText text-[10px] md:text-xs font-poppins font-medium">
           Dieter Rams
