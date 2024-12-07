@@ -8,7 +8,7 @@ import Arrow from "@/public/arrow-up-right-03.png";
 export default function Navbar() {
   return (
     <>
-      <header className="flex justify-between lg:px-10 pt-5 pb-5 bg-bg">
+      <header className="flex justify-between lg:px-10 h-20 bg-bg">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src={Logo}
@@ -18,19 +18,19 @@ export default function Navbar() {
           <p className="text-titleText font-neuePower text-[10px] md:text-sm md:hidden">Onest</p>
         </Link>
 
-        <nav className="flex items-center gap-x-8">
+        <nav className="hidden lg:flex items-center gap-x-8">
           <ul className="flex gap-x-5">
-            <Link href="/about" className="pb-5 border-b-2 border-blue-400">
+            <Link href="/about" className="lg:py-7 border-transparent lg:border-b-[1px] lg:hover:border-blue-400">
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 About
               </li>
             </Link>
-            <Link href="/work">
+            <Link href="/work" className="lg:py-7 border-transparent lg:border-b-[1px] lg:hover:border-blue-400">
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 Work
               </li>
             </Link>
-            <Link href="/creations">
+            <Link href="/creations" className="lg:py-7 border-transparent lg:border-b-[1px] lg:hover:border-blue-400">
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 Creations
               </li>
