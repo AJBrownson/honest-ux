@@ -20,8 +20,8 @@ export default function Sidebar() {
           className="w-[309px] h-auto object-contain"
         />
         <div className="flex flex-col px-2 mt-3 mb-5">
-          <h1 className="text-base text-titleText font-semibold">Honest</h1>
-          <p className="text-sm text-bodyText font-medium">Product Designer</p>
+          <h1 className="text-base text-titleText font-semibold font-poppins">Honest</h1>
+          <p className="text-sm text-bodyText font-medium font-poppins">Product Designer</p>
         </div>
         <div className="flex flex-col gap-y-3 px-2">
           <Link
