@@ -6,12 +6,14 @@ import Socials from "./Socials";
 import Dl from "@/public/download.png";
 import Dlhover from "@/public/download-hover.png";
 
+
 export default function Sidebar() {
   return (
     <>
       <section className="relative bg-bg flex flex-col border border-stroke rounded-lg px-2 pb-5 pt-2 font-poppins">
-       <div className="absolute -top-16 -right-5 bg-[#1A1B1E] py-3 px-4 rounded-xl border border-stroke">
+       <div className="absolute -top-16 -right-5 bg-[#1A1B1E] py-3 px-4 rounded-xl border border-stroke animate-bounce">
         <p className="text-titleText text-sm font-neuePower">hover <span className="text-bodyText">to see me</span> smile!</p>
+        <div className="absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-full w-4 h-4 bg-[#1A1B1E] border-l border-b border-gray-700 rotate-45"></div>
        </div>
        
         <Image
