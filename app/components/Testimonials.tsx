@@ -3,6 +3,15 @@ import Steve from "@/public/steve.svg";
 import Brown from "@/public/brown.svg";
 import Morgan from "@/public/justus.svg";
 
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 export default function Testimonials() {
   const testimonials = [
     {
@@ -67,7 +76,7 @@ export default function Testimonials() {
         <button className="p-2 bg-white rounded-full">→</button>
       </div>
     </div> */}
-      <div className="flex space-x-4 overflow-x-auto">
+      {/* <div className="flex space-x-4 overflow-x-auto">
         <div className="bg-bg flex flex-col lg:flex-row w-full max-w-[515px] border border-stroke py-4 rounded-xl">
           <div className="w-[32%] lg:border-r-[1px] border-r-stroke flex flex-col items-center">
             <Image
@@ -97,7 +106,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* <div className="bg-bg flex flex-col lg:flex-row w-full max-w-[515px] border border-stroke py-4 rounded-xl">
+        <div className="bg-bg flex flex-col lg:flex-row w-full max-w-[515px] border border-stroke py-4 rounded-xl">
           <div className="w-[32%] lg:border-r-[1px] border-r-stroke flex flex-col items-center">
             <Image
               src={Steve}
@@ -153,8 +162,26 @@ export default function Testimonials() {
               glad i met you Thank you.
             </p>
           </div>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
+
+<Carousel className="w-full max-w-sm">
+      <CarouselContent className="-ml-1">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-2xl font-semibold">{index + 1}</span>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
     </>
   );
 }
