@@ -18,36 +18,21 @@ export default function Sidebar() {
           <div className="absolute -z-20 left-10 bottom-2 translate-x-[-50%] translate-y-full w-4 h-4 bg-[#1A1B1E] border-l border-b border-stroke rotate-45"></div>
         </div>
 
-        <div className="relative group">
-          <Image
-            src={Portrait}
-            alt="Profile picture"
-            className="w-[309px] h-auto object-contain absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0"
-          />
-          <Image
-            src={PortraitHover}
-            alt="Hover"
-            className="w-[309px] h-auto object-contain absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-          />
-
-          <div className="">
-            <h1 className="mt-64 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
-              Honest
-            </h1>
-            <p className="mt-[17.5rem] text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
-              Product Designer
-            </p>
-
-            <h1 className="mt-64 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-              'Onest
-            </h1>
-            <p className="mt-[17.5rem] text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-              Now you see me!
-            </p>
-          </div>
+        <Image
+          src={Portrait}
+          alt="Profile picture"
+          className="w-[309px] h-auto object-contain"
+        />
+        <div className="flex flex-col px-2 mt-3 mb-5">
+          <h1 className="text-base text-titleText font-semibold font-poppins">
+            Honest
+          </h1>
+          <p className="text-sm text-bodyText font-medium font-poppins">
+            Product Designer
+          </p>
         </div>
 
-        <div className="flex flex-col gap-y-3 px-2 mt-80">
+        <div className="flex flex-col gap-y-3 px-2">
           <Link
             href="https://docs.google.com"
             target="_blank"

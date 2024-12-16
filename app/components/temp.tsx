@@ -12,13 +12,13 @@ export default function Sidebar() {
   return (
     <>
       <section className="relative bg-bg flex flex-col border border-stroke rounded-lg px-2 pb-5 pt-2 font-poppins">
-        <div className="group">
        <div className="absolute -top-14 -right-5 bg-[#1A1B1E] py-3 px-4 rounded-xl border border-stroke animate-bounce">
         <p className="text-titleText text-sm font-neuePower">hover <span className="text-bodyText">to see me</span> smile!</p>
         <div className="absolute -z-20 left-10 bottom-2 translate-x-[-50%] translate-y-full w-4 h-4 bg-[#1A1B1E] border-l border-b border-stroke rotate-45"></div>
        </div>
        
-        <Image
+      <div className="relative group">
+      <Image
           src={Portrait}
           alt="Profile picture"
           className="w-[309px] h-auto object-contain p-2 absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0"
@@ -29,17 +29,18 @@ export default function Sidebar() {
         className="w-[309px] h-auto object-contain p-2 absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
         
       />
-        <div className="flex flex-col px-2 mt-80 relative mb-5">
-          <h1 className="text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">Honest</h1>
-          <p className="text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">Product Designer</p>
 
-          <h1 className="text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">'Onest</h1>
-          <p className="text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">Now you see me!</p>
+      <div className="">
+      <h1 className="mt-64 left-4 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">Honest</h1>
+          <p className="mt-72 left-4 text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">Product Designer</p>
+      
+          <h1 className="mt-64 left-4 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">'Onest</h1>
+          <p className="mt-72 left-4 text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">Now you see me!</p>
 
-        </div>
-        </div>
+      </div>
+      </div>
 
-        <div className="flex flex-col gap-y-3 px-2">
+      <div className="flex flex-col gap-y-3 px-2 mt-80">
           <Link
             href="https://docs.google.com"
             target="_blank"
@@ -63,7 +64,7 @@ export default function Sidebar() {
             <TechStack />
             <Socials />
           </div>
-        </div>
+          </div>
       </section>
     </>
   );
