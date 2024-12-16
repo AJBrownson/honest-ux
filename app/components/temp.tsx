@@ -12,6 +12,7 @@ export default function Sidebar() {
   return (
     <>
       <section className="relative bg-bg flex flex-col border border-stroke rounded-lg px-2 pb-5 pt-2 font-poppins">
+        <div className="group">
        <div className="absolute -top-14 -right-5 bg-[#1A1B1E] py-3 px-4 rounded-xl border border-stroke animate-bounce">
         <p className="text-titleText text-sm font-neuePower">hover <span className="text-bodyText">to see me</span> smile!</p>
         <div className="absolute -z-20 left-10 bottom-2 translate-x-[-50%] translate-y-full w-4 h-4 bg-[#1A1B1E] border-l border-b border-stroke rotate-45"></div>
@@ -20,11 +21,22 @@ export default function Sidebar() {
         <Image
           src={Portrait}
           alt="Profile picture"
-          className="w-[309px] h-auto object-contain"
+          className="w-[309px] h-auto object-contain p-2 absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0"
         />
-        <div className="flex flex-col px-2 mt-3 mb-5">
-          <h1 className="text-base text-titleText font-semibold font-poppins">Honest</h1>
-          <p className="text-sm text-bodyText font-medium font-poppins">Product Designer</p>
+          <Image
+        src={PortraitHover}
+        alt="Hover"
+        className="w-[309px] h-auto object-contain p-2 absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+        
+      />
+        <div className="flex flex-col px-2 mt-80 relative mb-5">
+          <h1 className="text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">Honest</h1>
+          <p className="text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">Product Designer</p>
+
+          <h1 className="text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">'Onest</h1>
+          <p className="text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">Now you see me!</p>
+
+        </div>
         </div>
 
         <div className="flex flex-col gap-y-3 px-2">

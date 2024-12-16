@@ -47,7 +47,7 @@ export default function Home() {
             <div className="flex gap-x-4 md:gap-x-8">
               <Link href="/about">
                 <div className="border border-stroke rounded-lg p-2 bg-bg">
-                  <Image src={Portrait} alt="Honest's Portrait" className="lg:w-[242px] lg:h-[224px] object-contain " />
+                  <Image src={Portrait} alt="Honest's Portrait" className="lg:w-[242px] lg:h-[224px] object-contain" />
                   <div className="pt-4 pb-2 px-2">
                     <p className="font-poppins text-bodyText text-[10px] md:text-xs">
                       About Honest
@@ -59,6 +59,7 @@ export default function Home() {
                 </div>
               </Link>
 
+              <span>
               <div className="border border-stroke rounded-lg p-2 bg-bg">
                 <Image src={Shop} alt="Photo of a shopping bag" />
                 <div className="pt-4 pb-2 px-2">
@@ -70,6 +71,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+              </span>
             </div>
           </div>
         </div>
