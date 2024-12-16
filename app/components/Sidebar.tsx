@@ -31,17 +31,17 @@ export default function Sidebar() {
           />
 
           <div className="">
-            <h1 className="mt-64 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
+            <h1 className="mt-64 left-2 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
               Honest
             </h1>
-            <p className="mt-[17.5rem] text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
+            <p className="mt-[17.5rem] left-2 text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
               Product Designer
             </p>
 
-            <h1 className="mt-64 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
+            <h1 className="mt-64 left-2 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
               'Onest
             </h1>
-            <p className="mt-[17.5rem] text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
+            <p className="mt-[17.5rem] left-2 text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
               Now you see me!
             </p>
           </div>
