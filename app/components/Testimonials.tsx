@@ -166,7 +166,7 @@ export default function Testimonials() {
       </div> */}
 
       <Carousel className="w-full max-w-xl font-poppins">
-        <CarouselContent className="-ml-1">
+        <CarouselContent className="-ml-1 -z-40">
           {Array.from({ length: 3 }).map((_, index) => (
             <CarouselItem key={index} className="pl-1 basis-[80%]">
               <div className="p-1 flex">
