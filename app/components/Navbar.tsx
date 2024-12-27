@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/logo.png";
@@ -13,7 +14,10 @@ import TechStack from "./TechStack";
 import Socials from "./Socials";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   const [nav, setNav] = useState(false);
+
   const handleNav = () => {
     setNav(!nav);
   };
@@ -33,10 +37,14 @@ export default function Navbar() {
 
         {/* larger screens navigation */}
         <nav className="hidden md:flex items-center gap-x-8">
-          <ul className="flex gap-x-5">
+          {/* <ul className="flex gap-x-5">
             <Link
               href="/about"
-              className="lg:py-7 border-transparent lg:border-b-[1px] lg:hover:border-blue-400"
+              className={`lg:py-7 lg:border-b-[1px] ${
+                pathname === "/about"
+                  ? "lg:border-yellow-400"
+                  : "border-transparent"
+              } lg:hover:border-blue-400`}
             >
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 About
@@ -44,7 +52,11 @@ export default function Navbar() {
             </Link>
             <Link
               href="/work"
-              className="lg:py-7 border-transparent lg:border-b-[1px] lg:hover:border-blue-400"
+              className={`lg:py-7 lg:border-b-[1px] ${
+                pathname === "/work"
+                  ? "lg:border-yellow-400"
+                  : "border-transparent"
+              } lg:hover:border-blue-400`}
             >
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 Work
@@ -52,13 +64,56 @@ export default function Navbar() {
             </Link>
             <Link
               href="/creations"
-              className="lg:py-7 border-transparent lg:border-b-[1px] lg:hover:border-blue-400"
+              className={`lg:py-7 lg:border-b-[1px] ${
+                pathname === "/creations"
+                  ? "lg:border-yellow-400"
+                  : "border-transparent"
+              } lg:hover:border-blue-400`}
             >
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 Creations
               </li>
             </Link>
-          </ul>
+          </ul> */}
+          <ul className="flex gap-x-5">
+  <Link
+    href="/about"
+    className={`lg:py-7 lg:border-b-[1px] ${
+      pathname === "/about"
+        ? "lg:border-yellow-400 lg:hover:border-yellow-400"
+        : "border-transparent lg:hover:border-blue-400"
+    }`}
+  >
+    <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+      About
+    </li>
+  </Link>
+  <Link
+    href="/work"
+    className={`lg:py-7 lg:border-b-[1px] ${
+      pathname === "/work"
+        ? "lg:border-yellow-400 lg:hover:border-yellow-400"
+        : "border-transparent lg:hover:border-blue-400"
+    }`}
+  >
+    <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+      Work
+    </li>
+  </Link>
+  <Link
+    href="/creations"
+    className={`lg:py-7 lg:border-b-[1px] ${
+      pathname === "/creations"
+        ? "lg:border-yellow-400 lg:hover:border-yellow-400"
+        : "border-transparent lg:hover:border-blue-400"
+    }`}
+  >
+    <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+      Creations
+    </li>
+  </Link>
+</ul>
+
           <Link href="/contact-me">
             <button className="flex items-center gap-x-2 text-[#0E0E0D] bg-[#E8E8E8] font-poppins font-medium text-xs lg:text-sm rounded-full py-2 px-3">
               Let's Talk
@@ -102,10 +157,10 @@ export default function Navbar() {
             </Link>
 
             <div className="flex flex-col space-y-3">
-            <Link href="/contact-me">
-              <button className="w-full flex items-center justify-between bg-titleText text-bg font-poppins font-medium text-sm py-4 px-4 rounded-full">
-                Let’s Talk <Image src={Arrow} alt="" />
-              </button>
+              <Link href="/contact-me">
+                <button className="w-full flex items-center justify-between bg-titleText text-bg font-poppins font-medium text-sm py-4 px-4 rounded-full">
+                  Let’s Talk <Image src={Arrow} alt="" />
+                </button>
               </Link>
               <button className="flex items-center justify-between bg-semiBg text-titleText border border-stroke font-poppins font-medium text-sm py-4 px-4 rounded-full">
                 View Resume{" "}
