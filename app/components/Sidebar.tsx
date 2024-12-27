@@ -31,18 +31,18 @@ export default function Sidebar() {
           />
 
           <div className="">
-            <h1 className="mt-64 left-2 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
+            <h1 className="mt-64 left-2 text-sm text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
               Honest
             </h1>
-            <p className="mt-[17.5rem] left-2 text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
+            <p className="mt-[17.5rem] left-2 text-xs text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0">
               Product Designer
             </p>
 
-            <h1 className="mt-64 left-2 text-base text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
+            <h1 className="mt-64 left-2 text-sm text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
               'Onest
             </h1>
-            <p className="mt-[17.5rem] left-2 text-sm text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-              Now you see me!
+            <p className="mt-[17.5rem] left-2 text-xs text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
+              Caught you! Here's my smile
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Sidebar() {
             rel="noopener noreferrer"
             className=""
           >
-            <button className="group text-bodyText hover:text-titleText font-poppins text-sm font-medium w-full flex justify-between items-center py-2 px-4 gap-x-2 border border-stroke hover:bg-[#474853] rounded-full">
+            <button className="group text-bodyText hover:text-titleText font-poppins text-xs font-medium w-full flex justify-between items-center py-2 px-4 gap-x-2 border border-stroke hover:bg-[#474853] rounded-full">
               View Resume
               <div className="relative">
                 <Image src={Dl} alt="Download" className="w-6 h-6" />
