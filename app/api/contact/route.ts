@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+// import nodemailer from "nodemailer";
 
 
 export async function POST(request: Request) {
@@ -20,7 +20,7 @@ export async function POST(request: Request) {
 
       const mailOptions = {
         from: "user",
-        to: "harlee.berree@gmail.com",
+        to: "anni.brownson@gmail.com",
         subject: "New message from your portfolio site contact form",
         html: emailBody,
       };
