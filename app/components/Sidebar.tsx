@@ -22,7 +22,7 @@ export default function Sidebar() {
           <Image
             src={Portrait}
             alt="Profile picture"
-            className="w-[309px] h-auto object-contain absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+            className="w-[309px] h-auto object-contain"
           />
           <Image
             src={PortraitHover}
@@ -47,7 +47,7 @@ export default function Sidebar() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-y-3 px-2 mt-80">
+        <div className="flex flex-col gap-y-3 px-2 mt-16">
           <Link
             href="https://docs.google.com"
             target="_blank"
