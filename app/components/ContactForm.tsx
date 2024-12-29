@@ -9,7 +9,7 @@ import { SuccessModal, ErrorModal } from "./Modals";
 export default function ContactForm() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [showErrorModal, setShowErrorModal] = useState(false);
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState(""); // To track button text
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -43,20 +43,23 @@ export default function ContactForm() {
         setShowSuccessModal(true);
         setFormData({ name: "", email: "", message: "" });
       } else {
-       setShowErrorModal(true);
+        setShowErrorModal(true);
       }
     } catch (error) {
-     setShowErrorModal(true);
+      setShowErrorModal(true);
+    } finally {
+      setStatus(""); // Reset button text once modal appears
     }
-
-    setTimeout(() => {
-      setStatus("");
-    }, 3000);
   };
+
   return (
     <>
-       {showSuccessModal && <SuccessModal onClose={() => setShowSuccessModal(false)} />}
-      {showErrorModal && <ErrorModal onClose={() => setShowErrorModal(false)} />}
+      {showSuccessModal && (
+        <SuccessModal onClose={() => setShowSuccessModal(false)} />
+      )}
+      {showErrorModal && (
+        <ErrorModal onClose={() => setShowErrorModal(false)} />
+      )}
 
       <form
         onSubmit={handleSubmit}
@@ -94,7 +97,7 @@ export default function ContactForm() {
 
         <div className="flex flex-col gap-y-3">
           <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">
-            How can i help you?
+            How can I help you?
           </label>
           <textarea
             name="message"
@@ -108,13 +111,12 @@ export default function ContactForm() {
         </div>
 
         <div className="flex justify-center lg:justify-end">
-          <button className="lg:hidden w-full justify-center text-center flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm">
-            Send Message
-            <Image src={Sent} alt="" />
-          </button>
-          <button className="hidden lg:flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm">
-            Send Message
-            <Image src={Sent} alt="" />
+          <button
+            type="submit"
+            className="w-full lg:w-auto justify-center text-center flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm"
+          >
+            {status || "Send Message"}
+            <Image src={Sent} alt="sent icon" />
           </button>
         </div>
       </form>
