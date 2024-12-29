@@ -15,7 +15,6 @@ import Socials from "./Socials";
 
 export default function Navbar() {
   const pathname = usePathname();
-
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -37,44 +36,6 @@ export default function Navbar() {
 
         {/* larger screens navigation */}
         <nav className="hidden md:flex items-center gap-x-8">
-          {/* <ul className="flex gap-x-5">
-            <Link
-              href="/about"
-              className={`lg:py-7 lg:border-b-[1px] ${
-                pathname === "/about"
-                  ? "lg:border-yellow-400"
-                  : "border-transparent"
-              } lg:hover:border-blue-400`}
-            >
-              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
-                About
-              </li>
-            </Link>
-            <Link
-              href="/work"
-              className={`lg:py-7 lg:border-b-[1px] ${
-                pathname === "/work"
-                  ? "lg:border-yellow-400"
-                  : "border-transparent"
-              } lg:hover:border-blue-400`}
-            >
-              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
-                Work
-              </li>
-            </Link>
-            <Link
-              href="/creations"
-              className={`lg:py-7 lg:border-b-[1px] ${
-                pathname === "/creations"
-                  ? "lg:border-yellow-400"
-                  : "border-transparent"
-              } lg:hover:border-blue-400`}
-            >
-              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
-                Creations
-              </li>
-            </Link>
-          </ul> */}
           <ul className="flex gap-x-5">
             <Link
               href="/about"
