@@ -47,7 +47,7 @@ export default function Sidebar() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-y-3 px-2 mt-16">
+        <div className="flex flex-col gap-y-3 px-2 mt-[4.8rem]">
           <Link
             href="https://docs.google.com"
             target="_blank"
