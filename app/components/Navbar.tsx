@@ -76,43 +76,43 @@ export default function Navbar() {
             </Link>
           </ul> */}
           <ul className="flex gap-x-5">
-  <Link
-    href="/about"
-    className={`lg:py-7 lg:border-b-[1px] ${
-      pathname === "/about"
-        ? "lg:border-yellow-400 lg:hover:border-yellow-400"
-        : "border-transparent lg:hover:border-blue-400"
-    }`}
-  >
-    <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
-      About
-    </li>
-  </Link>
-  <Link
-    href="/work"
-    className={`lg:py-7 lg:border-b-[1px] ${
-      pathname === "/work"
-        ? "lg:border-yellow-400 lg:hover:border-yellow-400"
-        : "border-transparent lg:hover:border-blue-400"
-    }`}
-  >
-    <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
-      Work
-    </li>
-  </Link>
-  <Link
-    href="/creations"
-    className={`lg:py-7 lg:border-b-[1px] ${
-      pathname === "/creations"
-        ? "lg:border-yellow-400 lg:hover:border-yellow-400"
-        : "border-transparent lg:hover:border-blue-400"
-    }`}
-  >
-    <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
-      Creations
-    </li>
-  </Link>
-</ul>
+            <Link
+              href="/about"
+              className={`lg:py-7 lg:border-b-[1px] ${
+                pathname === "/about"
+                  ? "lg:border-yellow-400 lg:hover:border-yellow-400"
+                  : "border-transparent lg:hover:border-blue-400"
+              }`}
+            >
+              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+                About
+              </li>
+            </Link>
+            <Link
+              href="/work"
+              className={`lg:py-7 lg:border-b-[1px] ${
+                pathname === "/work"
+                  ? "lg:border-yellow-400 lg:hover:border-yellow-400"
+                  : "border-transparent lg:hover:border-blue-400"
+              }`}
+            >
+              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+                Work
+              </li>
+            </Link>
+            <Link
+              href="/creations"
+              className={`lg:py-7 lg:border-b-[1px] ${
+                pathname === "/creations"
+                  ? "lg:border-yellow-400 lg:hover:border-yellow-400"
+                  : "border-transparent lg:hover:border-blue-400"
+              }`}
+            >
+              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+                Creations
+              </li>
+            </Link>
+          </ul>
 
           <Link href="/contact-me">
             <button className="flex items-center gap-x-2 text-[#0E0E0D] bg-[#E8E8E8] font-poppins font-medium text-xs lg:text-sm rounded-full py-2 px-3">
@@ -135,8 +135,8 @@ export default function Navbar() {
         <nav
           className={
             nav
-              ? `fixed md:hidden left-0 top-14 border-t-[1px] border-stroke w-full h-full bg-bg ease-in-out duration-500`
-              : `ease-in-out w-full duration-500 fixed top-14 border-t-[1px] border-stroke bottom-0 left-[-100%]`
+              ? `fixed md:hidden left-0 top-14 border-t-[1px] border-stroke w-full h-full bg-bg ease-in-out duration-500 z-[9999]`
+              : `ease-in-out w-full duration-500 fixed top-14 border-t-[1px] border-stroke bottom-0 left-[-100%] z-[9999]`
           }
         >
           <ul className="flex flex-col gap-y-5 px-6">

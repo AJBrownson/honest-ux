@@ -1,12 +1,14 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
-import Sent from "@/public/sent.png"
+import Sent from "@/public/sent.png";
 import { contactEmailTemplate } from "@/emailTemplates/contactTemplate";
-
+import { SuccessModal, ErrorModal } from "./Modals";
 
 export default function ContactForm() {
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showErrorModal, setShowErrorModal] = useState(false);
   const [status, setStatus] = useState("");
   const [formData, setFormData] = useState({
     name: "",
@@ -38,13 +40,13 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        setStatus("Message sent successfully!. I'll be in touch");
+        setShowSuccessModal(true);
         setFormData({ name: "", email: "", message: "" });
       } else {
-        setStatus("Failed to send message. Please try again");
+       setShowErrorModal(true);
       }
     } catch (error) {
-      setStatus("Error occurred. Please try again");
+     setShowErrorModal(true);
     }
 
     setTimeout(() => {
@@ -53,12 +55,17 @@ export default function ContactForm() {
   };
   return (
     <>
-      <form 
+       {showSuccessModal && <SuccessModal onClose={() => setShowSuccessModal(false)} />}
+      {showErrorModal && <ErrorModal onClose={() => setShowErrorModal(false)} />}
+
+      <form
         onSubmit={handleSubmit}
         className="w-full max-w-lg flex flex-col gap-y-5 bg-bg border border-stroke p-4 rounded-xl"
       >
-      <div className="flex flex-col gap-y-3 mt-2">
-          <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">Name</label>
+        <div className="flex flex-col gap-y-3 mt-2">
+          <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">
+            Name
+          </label>
           <input
             type="text"
             name="name"
@@ -71,7 +78,9 @@ export default function ContactForm() {
         </div>
 
         <div className="flex flex-col gap-y-3">
-          <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">Email</label>
+          <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">
+            Email
+          </label>
           <input
             type="email"
             name="email"
@@ -84,7 +93,9 @@ export default function ContactForm() {
         </div>
 
         <div className="flex flex-col gap-y-3">
-          <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">How can i help you?</label>
+          <label className="text-titleText text-xs lg:text-sm font-poppins font-medium">
+            How can i help you?
+          </label>
           <textarea
             name="message"
             value={formData.message}
@@ -105,9 +116,6 @@ export default function ContactForm() {
             Send Message
             <Image src={Sent} alt="" />
           </button>
-        </div>
-        <div className="p-[1px]">
-        {status && <p className="text-center">{status}</p>}
         </div>
       </form>
     </>

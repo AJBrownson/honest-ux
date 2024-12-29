@@ -4,14 +4,16 @@ import nodemailer from "nodemailer";
 
 
 export async function POST(request: Request) {
-  if (request.method === "POST") {
+  // if (request.method === "POST") {
     try {
       const { emailBody } = await request.json();
 
       const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 587,
-        secure: false,
+        // port: 587,
+        // secure: false,
+        port: 465,
+        secure: true,
         auth: {
           user: process.env.SMTP_SERVER_USERNAME,
           pass: process.env.SMTP_SERVER_PASSWORD,
@@ -21,7 +23,7 @@ export async function POST(request: Request) {
       const mailOptions = {
         from: "user",
         to: "anni.brownson@gmail.com",
-        subject: "New message from your portfolio site contact form",
+        subject: "New Message from your website contact form",
         html: emailBody,
       };
 
@@ -32,7 +34,8 @@ export async function POST(request: Request) {
         { status: 200 }
       );
     } catch (error) {
-      return new NextResponse("Failed to send message.", { status: 500 });
+      console.error("Error sending email:", error);
+      // return new NextResponse("Failed to send message.", { status: 500 });
     }
-  }
+  // }
 }
