@@ -4,7 +4,7 @@ import Rectangle from "@/public/Rectangle 1.png";
 export default function WorkspaceCarousel() {
   return (
     <>
-      {/* <div>
+      {/* <div className="w-[80%]">
         <div className="w-full inline-flex flex-nowrap overflow-hidden lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(10%-20px),transparent_100%)]">
           <div className="flex items-center justify-center md:justify-start [&_li]:mx-1 lg:[&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll">
           <div className="border border-[#474853] bg-[#0D0D0D] rounded-xl p-2">
@@ -77,6 +77,7 @@ export default function WorkspaceCarousel() {
           </div>
         </div>
       </div> */}
+
       <div className="border border-[#474853] bg-[#0D0D0D] rounded-xl p-2">
         <Image
           src={Rectangle}

@@ -6,7 +6,6 @@ import Sent from "@/public/sent.png";
 import { contactEmailTemplate } from "@/emailTemplates/contactTemplate";
 import { SuccessModal, ErrorModal } from "./Modals";
 
-
 export default function ContactForm() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [showErrorModal, setShowErrorModal] = useState(false);

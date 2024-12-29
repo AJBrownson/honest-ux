@@ -23,7 +23,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <header className="flex items-center justify-between px-6 lg:px-10 h-14 lg:h-20 bg-bg">
+      <header className="flex items-center justify-between px-6 lg:px-10 h-14 lg:h-20 bg-bg z-[9999]">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src={Logo}
@@ -135,8 +135,8 @@ export default function Navbar() {
         <nav
           className={
             nav
-              ? `fixed md:hidden left-0 top-14 border-t-[1px] border-stroke w-full h-full bg-bg ease-in-out duration-500 z-[9999]`
-              : `ease-in-out w-full duration-500 fixed top-14 border-t-[1px] border-stroke bottom-0 left-[-100%] z-[9999]`
+              ? `fixed md:hidden left-0 top-14 border-t-[1px] border-stroke w-full h-full bg-bg ease-in-out duration-500`
+              : `ease-in-out w-full duration-500 fixed top-14 border-t-[1px] border-stroke bottom-0 left-[-100%]`
           }
         >
           <ul className="flex flex-col gap-y-5 px-6">
