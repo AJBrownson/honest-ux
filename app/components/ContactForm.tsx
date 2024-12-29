@@ -6,10 +6,11 @@ import Sent from "@/public/sent.png";
 import { contactEmailTemplate } from "@/emailTemplates/contactTemplate";
 import { SuccessModal, ErrorModal } from "./Modals";
 
+
 export default function ContactForm() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [showErrorModal, setShowErrorModal] = useState(false);
-  const [status, setStatus] = useState(""); // To track button text
+  const [status, setStatus] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -48,7 +49,7 @@ export default function ContactForm() {
     } catch (error) {
       setShowErrorModal(true);
     } finally {
-      setStatus(""); // Reset button text once modal appears
+      setStatus("");
     }
   };
 
