@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,6 +20,11 @@ export default function Navbar() {
   const handleNav = () => {
     setNav(!nav);
   };
+
+  useEffect(() => {
+    setNav(!nav);
+  }, [pathname]);
+
   return (
     <>
       <header className="flex items-center justify-between px-6 lg:px-10 h-14 lg:h-20 bg-bg z-[9999]">
