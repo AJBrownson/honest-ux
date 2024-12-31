@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="flex items-center justify-between px-6 lg:px-10 h-14 lg:h-20 bg-bg z-[9999]">
+      <header className="flex items-center justify-between px-6 lg:px-10 h-14 lg:h-20 bg-bg">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src={Logo}
