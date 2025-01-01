@@ -21,10 +21,6 @@ export default function Navbar() {
     setNav(!nav);
   };
 
-  useEffect(() => {
-    setNav(!nav);
-  }, [pathname]);
-
   return (
     <>
       <header className="flex items-center justify-between px-6 lg:px-10 h-14 lg:h-20 bg-bg">
@@ -106,24 +102,24 @@ export default function Navbar() {
           }
         >
           <ul className="flex flex-col gap-y-5 px-6">
-            <Link href="/about" className="pt-10">
+            <Link href="/about" className="pt-10" onClick={handleNav}>
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 About
               </li>
             </Link>
-            <Link href="/work" className="pt-5">
+            <Link href="/work" className="pt-5" onClick={handleNav}>
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 Work
               </li>
             </Link>
-            <Link href="/creations" className="py-5">
+            <Link href="/creations" className="py-5" onClick={handleNav}>
               <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
                 Creations
               </li>
             </Link>
 
             <div className="flex flex-col space-y-3">
-              <Link href="/contact-me">
+              <Link href="/contact-me" onClick={handleNav}>
                 <button className="w-full flex items-center justify-between bg-titleText text-bg font-poppins font-medium text-sm py-4 px-4 rounded-full">
                   Let’s Talk <Image src={Arrow} alt="" />
                 </button>
