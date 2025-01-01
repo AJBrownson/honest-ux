@@ -1,9 +1,11 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Image1 from "@/public/Image1.png"
+import Link from "next/link";
+import Image1 from "@/public/Image1.png";
 import Image2 from "@/public/Image2.png";
 import Image2Mobile from "@/public/Image2-mobile.png";
 import Image3 from "@/public/Image3.png";
+import Dl from "@/public/download.png";
 import Accordion from "@/app/components/Accordion";
 
 export const metadata: Metadata = {
@@ -111,6 +113,20 @@ export default function About() {
           My Work Experience
         </p>
         <Accordion />
+
+        <div className="mt-6 lg:hidden">
+          <Link
+            href="https://docs.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            <button className="bg-bg text-titleText font-poppins text-xs font-medium w-full flex justify-center items-center py-2 px-4 gap-x-2 border border-[#4A4A4A] rounded-full">
+              View Resume
+              <Image src={Dl} alt="Download" className="w-6 h-6" />
+            </button>
+          </Link>
+        </div>
       </section>
     </main>
   );

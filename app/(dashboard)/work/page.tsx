@@ -4,7 +4,7 @@ import Link from "next/link";
 import Note from "@/public/note.png";
 import PersonalProjects from "@/app/components/PersonalCards";
 import WorkProjects from "@/app/components/WorkCards";
-import WorkspaceCarousel from "@/app/components/Carousel";
+import WorkspaceCarousel from "@/app/components/WorkspaceCarousel";
 import Testimonials from "@/app/components/Testimonials";
 
 export const metadata: Metadata = {

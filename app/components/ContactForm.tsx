@@ -74,7 +74,7 @@ export default function ContactForm() {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="bg-semiBg border border-stroke rounded-lg text-softBodyText font-poppins font-medium text-xs lg:text-sm p-3"
+            className="bg-semiBg focus:border-softBodyText focus:outline-0 focus:ring-0 border border-stroke rounded-lg text-softBodyText font-poppins font-medium text-xs lg:text-sm p-3"
             placeholder="Mark John"
             required
           />
@@ -89,7 +89,7 @@ export default function ContactForm() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="bg-semiBg border border-stroke rounded-lg text-softBodyText font-poppins font-medium text-xs lg:text-sm p-3"
+            className="bg-semiBg focus:border-softBodyText focus:outline-0 focus:ring-0 border border-stroke rounded-lg text-softBodyText font-poppins font-medium text-xs lg:text-sm p-3"
             placeholder="example@gmail.com"
             required
           />
@@ -104,20 +104,34 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows={8}
-            className="bg-semiBg border border-stroke rounded-lg text-softBodyText font-poppins font-medium text-xs lg:text-sm p-3"
+            className="bg-semiBg focus:border-softBodyText focus:outline-0 focus:ring-0 border border-stroke rounded-lg text-softBodyText font-poppins font-medium text-xs lg:text-sm p-3"
             placeholder="Share your challenges or vision with me. I'm here to help you bring it to life!"
             required
           ></textarea>
         </div>
 
-        <div className="flex justify-center lg:justify-end">
-          <button
-            type="submit"
-            className="w-full lg:w-auto justify-center text-center flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm"
-          >
+        {/* <div className="flex justify-center lg:justify-end">
+          <button className="lg:hidden w-full justify-center text-center flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm">
             {status || "Send Message"}
+          </button>
+
+          <button className="hidden lg:flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm">
             <Image src={Sent} alt="sent icon" />
           </button>
+        </div> */}
+
+<div className="flex justify-center lg:justify-end">
+          <button className="lg:hidden w-full justify-center text-center flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm">
+            Send Message
+            <Image src={Sent} alt="" />
+          </button>
+          <button className="hidden lg:flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm">
+            Send Message
+            <Image src={Sent} alt="" />
+          </button>
+        </div>
+        <div className="p-[1px]">
+        {status && <p className="text-center">{status}</p>}
         </div>
       </form>
     </>

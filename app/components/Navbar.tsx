@@ -102,18 +102,18 @@ export default function Navbar() {
           }
         >
           <ul className="flex flex-col gap-y-5 px-6">
-            <Link href="/about" className="pt-10" onClick={handleNav}>
-              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+            <Link href="/about" className={`pt-10 ${pathname === "/about" ?"text-titleText" : "text-bodyText"}`} onClick={handleNav}>
+              <li className="font-poppins font-medium text-xs lg:text-sm">
                 About
               </li>
             </Link>
-            <Link href="/work" className="pt-5" onClick={handleNav}>
-              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+            <Link href="/work" className={`pt-5 ${pathname === "/work" ?"text-titleText" : "text-bodyText"}`} onClick={handleNav}>
+              <li className="font-poppins font-medium text-xs lg:text-sm">
                 Work
               </li>
             </Link>
-            <Link href="/creations" className="py-5" onClick={handleNav}>
-              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+            <Link href="/creations" className={`py-5 ${pathname === "/creations" ?"text-titleText" : "text-bodyText"}`} onClick={handleNav}>
+              <li className="font-poppins font-medium text-xs lg:text-sm">
                 Creations
               </li>
             </Link>
