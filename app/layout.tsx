@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+
 const neuePower = localFont({
   src: "../public/fonts/NeuePower-Ultra.woff",
   variable: "--font-neue-power",
 });
+
 
 const poppins = localFont({
   src: [
