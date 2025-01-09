@@ -54,17 +54,17 @@ export default function Testimonials() {
                       <p className="text-titleText font-bold font-poppins text-xs md:text-sm">
                         {testimonial.name}
                       </p>
-                      <p className="text-bodyText font-poppins text-[10px] md:text-xs lg:mt-1">
+                      <p className="text-bodyText font-poppins text-[10px] lg:mt-1">
                         {testimonial.role}
                       </p>
                     </span>
                   </div>
 
                   <div className="px-3 lg:px-6 w-full max-w-[325px]">
-                    <p className="font-poppins font-medium text-5xl lg:text-7xl mt-4 lg:mt-8 text-titleText">
+                    <p className="font-poppins font-medium text-5xl lg:text-7xl mt-4 lg:mt-6 text-titleText">
                       “
                     </p>
-                    <p className="font-poppins font-medium text-bodyText text-xs lg:text-[15px] max-w-[277px]">
+                    <p className="font-poppins font-medium text-bodyText text-xs mb-4 lg:mb-6 lg:text-[15px] max-w-[277px]">
                       {testimonial.quote}
                     </p>
                   </div>
