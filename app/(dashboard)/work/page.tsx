@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import Note from "@/public/note.png";
 import PersonalProjects from "@/app/components/PersonalCards";
 import WorkProjects from "@/app/components/WorkCards";
@@ -66,7 +65,7 @@ export default function Work() {
           Testimonials
         </h1>
         <p className="my-3 font-poppins text-[10px] lg:text-sm font-medium text-bodyText">
-          Here are thoughts from those I've worked with
+          Here are thoughts from those I&apos;ve worked with
         </p>
         <Testimonials />
       </section>

@@ -1,54 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import Locked from "@/public/locked.png";
 import Links from "@/public/link-square-02.png";
 import Rectangle from "@/public/Rectangle 1.png";
 
 export default function WorkProjects() {
-  const data = [
-    {
-      tag: "UX, UI & Brand Design",
-      name: "Softcash Mobile Banking",
-      status: "Under Development",
-      icon: Locked,
-    },
-    {
-      tag: "UI Design",
-      name: "Solgacy",
-      status: "Case Study",
-      icon: Links,
-    },
-  ];
-
   return (
     <>
-      {/* <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
-        {data.map((item, index) => (
-          <div key={index} className="flex-1">
-            <div className="w-full border border-stroke bg-bg rounded-xl p-2">
-              <div className="bg-[#D1D1D2] w-[242px] h-[224px] rounded-lg"></div>
-              <div className="mt-3 px-2">
-                <p className="font-poppins text-[10px] lg:text-xs text-bodyText">
-                  {item.tag}
-                </p>
-                <p className="text-titleText font-poppins font-semibold text-xs lg:text-base">
-                  {item.name}
-                </p>
-              </div>
-              <div className="my-3 px-2 flex justify-between items-center">
-                <div className="p-2 border rounded-full bg-semiBg">
-                  <Image src={item.icon} alt="" width={20} height={20} />
-                </div>
-                <p className="text-bodyText bg-semiBg font-poppins font-medium text-[10px] lg:text-[11px] p-2 border rounded-full text-center">
-                  {item.status}
-                </p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div> */}
-
       <div className="flex justify-between space-x-2 md:space-x-4">
         <div className="w-full border border-stroke bg-bg rounded-xl p-2">
           <Image

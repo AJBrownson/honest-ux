@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -83,7 +83,7 @@ export default function Navbar() {
 
           <Link href="/contact-me">
             <button className="flex items-center gap-x-2 text-[#0E0E0D] bg-[#E8E8E8] font-poppins font-medium text-xs lg:text-sm rounded-full py-2 px-3">
-              Let's Talk
+              Let&apos;s Talk
               <Image src={Arrow} alt="" />
             </button>
           </Link>

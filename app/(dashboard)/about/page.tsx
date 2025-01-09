@@ -38,8 +38,8 @@ export default function About() {
             kid into sports, making crafts, sketching and of course, trying new
             foods! Oh, wait… did I forget to mention I love food? My bad! 😂
             <br />
-            Since I was little, I’ve always loved spicy meals. So, if you ever
-            want to catch my attention, just invite me for a spicy lunch. That’s
+            Since I was little, I&apos;ve always loved spicy meals. So, if you ever
+            want to catch my attention, just invite me for a spicy lunch. That&apos;s
             my weakness!
           </p>
         </div>
@@ -61,10 +61,10 @@ export default function About() {
             How Design Won Me Over
           </p>
           <p className="text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
-            In 2021, I joined my school’s internship program and tried
+            In 2021, I joined my school&apos;s internship program and tried
             everything from coding, data analysis, and even cyber security.
             Honestly, I was just throwing things around to see what stuck. But
-            that same year, design caught my eye, probably because I’ve always
+            that same year, design caught my eye, probably because I&apos;ve always
             loved art.
           </p>
           <p className="pt-1 text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
@@ -88,18 +88,18 @@ export default function About() {
         />
         <div className="lg:order-first mt-10 lg:mt-0 flex flex-col gap-y-3 font-poppins font-medium">
           <p className="text-titleText text-xs lg:text-sm">
-            When I’m Not Designing
+            When I&apos;m Not Designing
           </p>
           <p className="text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
-            In my free time, you’ll catch me jamming to my favorite playlist,
+            In my free time, you&apos;ll catch me jamming to my favorite playlist,
             brainstorming new ideas, and keeping up with the latest design
-            trends. Gotta keep things fresh! Right now, I’m diving into motion
+            trends. Gotta keep things fresh! Right now, I&apos;m diving into motion
             design and Web3 design. Who knew design could be so lively?
           </p>
           <p className="pt-1 text-xs lg:text-sm text-bodyText tracking-wide leading-tight">
-            When I'm not designing, you’ll find me watching movies, hitting the
+            When I&apos;m not designing, you&apos;ll find me watching movies, hitting the
             gym (trying to balance all those snacks), and staying updated on
-            what’s new in the design world. After all, I can’t let my creativity
+            what&apos;s new in the design world. After all, I can&apos;t let my creativity
             go flat!{" "}
           </p>
           <p className="text-xs lg:text-sm text-titleText tracking-wide leading-tight">

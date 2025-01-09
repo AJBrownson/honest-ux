@@ -13,7 +13,7 @@ export default function Contact() {
         Get in touch
       </h1>
       <p className="mt-3 font-poppins text-[10px] lg:text-sm font-medium text-bodyText">
-        I'm excited to discuss new opportunities, whether it's a{" "}
+        I&apos;m excited to discuss new opportunities, whether it&apos;s a{" "}
         <span className="text-titleText">full-time role</span>,{" "}
         <span className="text-titleText">partnership</span>, or{" "}
         <span className="text-titleText">freelance project</span> - just send me

@@ -39,10 +39,10 @@ export default function Sidebar() {
             </p>
 
             <h1 className="mt-64 left-2 text-sm text-titleText font-semibold font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-              'Onest
+            &apos;Onest
             </h1>
             <p className="mt-[17.5rem] left-2 text-xs text-bodyText font-medium font-poppins absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-              Caught you! Here's my smile
+              Caught you! Here&apos;s my smile
             </p>
           </div>
         </div>
