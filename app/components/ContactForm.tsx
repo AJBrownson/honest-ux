@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useState } from "react";
@@ -126,7 +128,7 @@ export default function ContactForm() {
             <Image src={Sent} alt="" />
           </button>
           <button className="hidden lg:flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm">
-            Send Message
+            {status || "Send Message"}
             <Image src={Sent} alt="" />
           </button>
         </div>
