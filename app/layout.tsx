@@ -15,10 +15,10 @@ const poppins = localFont({
       path: "../public/fonts/Poppins-Medium.ttf",
       weight: "500",
     },
-    {
-      path: "../public/fonts/Poppins-Semibold.ttf",
-      weight: "600",
-    },
+    // {
+    //   path: "../public/fonts/Poppins-SemiBold.ttf",
+    //   weight: "600",
+    // },
   ],
   variable: "--font-poppins",
 });
