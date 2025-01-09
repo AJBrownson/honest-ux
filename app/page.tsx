@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         <div className="mt-16 mb-[210px]">
-          <div className="md:bg-[#1A1B1E] max-w-[1200px] rounded-lg md:py-6 md:px-[72px] flex flex-col">
+          <div className="md:bg-[#171717] max-w-[1200px] rounded-lg md:py-6 md:px-[72px] flex flex-col">
             <div className="flex space-x-3 mb-4 md:mb-10">
               <Image src={CarIcon} alt="" className="" />
               <p className="text-titleText font-poppins font-medium">

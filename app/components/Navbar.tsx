@@ -38,41 +38,46 @@ export default function Navbar() {
         {/* larger screens navigation */}
         <nav className="hidden md:flex items-center gap-x-8">
           <ul className="flex gap-x-5">
-            <Link
-              href="/about"
-              className={`lg:py-7 lg:border-b-[1px] ${
-                pathname === "/about"
-                  ? "lg:border-yellow-400 lg:hover:border-yellow-400"
-                  : "border-transparent lg:hover:border-blue-400"
-              }`}
-            >
-              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+            <Link href="/about" className="relative group">
+              <li
+                className={`lg:py-7 lg:border-b-[1px] border-transparent text-bodyText font-poppins font-medium text-xs lg:text-sm`}
+              >
                 About
               </li>
+              {/* Conditional Gradient Div for Large Screens */}
+              {pathname === "/about" ? (
+                <div className="hidden lg:block p-[0.9px] bg-gradient-to-r from-[#2F3037] via-[#FFEB3B] to-[#2F3037] [background:linear-gradient(90deg,#2F3037 0%,#FFEB3B 55%,#2F3037 100%)] group-hover:opacity-100 transition-opacity duration-300"></div>
+              ) : (
+                <div className="hidden lg:block p-[0.9px] bg-gradient-to-r from-[#2F3037] via-[#FFFFFF] to-[#2F3037] [background:linear-gradient(90deg,#2F3037 7%,#FFFFFF 53%,#2F3037 91%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              )}
             </Link>
-            <Link
-              href="/work"
-              className={`lg:py-7 lg:border-b-[1px] ${
-                pathname === "/work"
-                  ? "lg:border-yellow-400 lg:hover:border-yellow-400"
-                  : "border-transparent lg:hover:border-blue-400"
-              }`}
-            >
-              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+
+            <Link href="/work" className="relative group">
+              <li
+                className={`lg:py-7 lg:border-b-[1px] border-transparent text-bodyText font-poppins font-medium text-xs lg:text-sm`}
+              >
                 Work
               </li>
+              {/* Conditional Gradient Div for Large Screens */}
+              {pathname === "/work" ? (
+                <div className="hidden lg:block p-[0.8px] bg-gradient-to-r from-[#2F3037] via-[#FFEB3B] to-[#2F3037] [background:linear-gradient(90deg,#2F3037 0%,#FFEB3B 55%,#2F3037 100%)] group-hover:opacity-100 transition-opacity duration-300"></div>
+              ) : (
+                <div className="hidden lg:block p-[0.8px] bg-gradient-to-r from-[#2F3037] via-[#FFFFFF] to-[#2F3037] [background:linear-gradient(90deg,#2F3037 7%,#FFFFFF 53%,#2F3037 91%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              )}
             </Link>
-            <Link
-              href="/creations"
-              className={`lg:py-7 lg:border-b-[1px] ${
-                pathname === "/creations"
-                  ? "lg:border-yellow-400 lg:hover:border-yellow-400"
-                  : "border-transparent lg:hover:border-blue-400"
-              }`}
-            >
-              <li className="text-bodyText font-poppins font-medium text-xs lg:text-sm">
+
+            <Link href="/creations" className="relative group">
+              <li
+                className={`lg:py-7 lg:border-b-[1px] border-transparent text-bodyText font-poppins font-medium text-xs lg:text-sm`}
+              >
                 Creations
               </li>
+              {/* Conditional Gradient Div for Large Screens */}
+              {pathname === "/creations" ? (
+                <div className="hidden lg:block p-[0.8px] bg-gradient-to-r from-[#2F3037] via-[#FFEB3B] to-[#2F3037] [background:linear-gradient(90deg,#2F3037 0%,#FFEB3B 55%,#2F3037 100%)] group-hover:opacity-100 transition-opacity duration-300"></div>
+              ) : (
+                <div className="hidden lg:block p-[0.8px] bg-gradient-to-r from-[#2F3037] via-[#FFFFFF] to-[#2F3037] [background:linear-gradient(90deg,#2F3037 7%,#FFFFFF 53%,#2F3037 91%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              )}
             </Link>
           </ul>
 
@@ -102,17 +107,35 @@ export default function Navbar() {
           }
         >
           <ul className="flex flex-col gap-y-5 px-6">
-            <Link href="/about" className={`pt-10 ${pathname === "/about" ?"text-titleText" : "text-bodyText"}`} onClick={handleNav}>
+            <Link
+              href="/about"
+              className={`pt-10 ${
+                pathname === "/about" ? "text-titleText" : "text-bodyText"
+              }`}
+              onClick={handleNav}
+            >
               <li className="font-poppins font-medium text-xs lg:text-sm">
                 About
               </li>
             </Link>
-            <Link href="/work" className={`pt-5 ${pathname === "/work" ?"text-titleText" : "text-bodyText"}`} onClick={handleNav}>
+            <Link
+              href="/work"
+              className={`pt-5 ${
+                pathname === "/work" ? "text-titleText" : "text-bodyText"
+              }`}
+              onClick={handleNav}
+            >
               <li className="font-poppins font-medium text-xs lg:text-sm">
                 Work
               </li>
             </Link>
-            <Link href="/creations" className={`py-5 ${pathname === "/creations" ?"text-titleText" : "text-bodyText"}`} onClick={handleNav}>
+            <Link
+              href="/creations"
+              className={`py-5 ${
+                pathname === "/creations" ? "text-titleText" : "text-bodyText"
+              }`}
+              onClick={handleNav}
+            >
               <li className="font-poppins font-medium text-xs lg:text-sm">
                 Creations
               </li>
