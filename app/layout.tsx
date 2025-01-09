@@ -3,18 +3,18 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const neuePower = localFont({
-  src: "./fonts/NeuePower-Ultra.woff",
+  src: "../public/fonts/NeuePower-Ultra.woff",
   variable: "--font-neue-power",
 });
 
 const poppins = localFont({
   src: [
     {
-      path: "./fonts/Poppins-Medium.ttf",
+      path: "../public/fonts/Poppins-Medium.ttf",
       weight: "500",
     },
     {
-      path: "./fonts/Poppins-Semibold.ttf",
+      path: "../public/fonts/Poppins-Semibold.ttf",
       weight: "600",
     },
   ],
