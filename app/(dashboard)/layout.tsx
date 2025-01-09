@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${neuePower.variable} ${poppins.variable}`}>
-        <div className="fixed md:px-0 top-0 w-screen">
+        <div className="fixed md:px-0 top-0 w-screen z-40">
           <Navbar />
         </div>
         <div className="lg:flex lg:h-screen flex-col lg:flex-row lg:overflow-hidden lg:pt-10 lg:px-4 bg-bg">
