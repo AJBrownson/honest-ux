@@ -120,7 +120,7 @@ export default function ContactForm() {
           </button>
         </div> */}
 
-<div className="flex justify-center lg:justify-end">
+        <div className="flex justify-center lg:justify-end">
           <button className="lg:hidden w-full justify-center text-center flex items-center gap-x-2 py-2 px-8 bg-[#C6C6C6] rounded-full text-[#0E0E0D] font-poppins font-medium text-xs lg:text-sm">
             Send Message
             <Image src={Sent} alt="" />
@@ -131,7 +131,7 @@ export default function ContactForm() {
           </button>
         </div>
         <div className="p-[1px]">
-        {status && <p className="text-center">{status}</p>}
+          {status && <p className="text-center">{status}</p>}
         </div>
       </form>
     </>

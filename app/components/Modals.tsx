@@ -27,7 +27,7 @@ export function SuccessModal({ onClose }: { onClose: () => void }) {
           </Button>
           <p className="text-bodyText font-poppins font-medium text-sm">
             Need a quick reply?{" "}
-            <Link href="" className="text-[#FFEB3B] hover:underline">
+            <Link href="https://x.com/onlyhonesst" target="_blank" rel="noopener noreferrer" className="text-[#FFEB3B] hover:underline">
               Chat on X!
             </Link>
           </p>
@@ -58,7 +58,7 @@ export function ErrorModal({ onClose }: { onClose: () => void }) {
           </Button>
           <p className="text-bodyText font-poppins font-medium text-sm">
             Need a quick reply?{" "}
-            <Link href="" className="text-[#FFEB3B] hover:underline">
+            <Link href="https://x.com/onlyhonesst" target="_blank" rel="noopener noreferrer" className="text-[#FFEB3B] hover:underline">
               Chat on X!
             </Link>
           </p>
