@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, SetStateAction } from "react";
+import { useState } from "react";
 
 import ArrowUp from "@/public/arrow-up.png";
 import ArrowDown from "@/public/arrow-down.png";
@@ -31,9 +31,9 @@ export default function Accordion() {
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const handleToggle = (index: number | SetStateAction<null>) => {
+  const handleToggle = (index: number) => {
     if (openIndex === index) {
       setOpenIndex(null);
     } else {
